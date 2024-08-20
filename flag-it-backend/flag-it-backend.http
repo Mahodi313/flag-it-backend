@@ -1,0 +1,6 @@
+@flag_it_backend_HostAddress = http://localhost:5062
+
+GET {{flag_it_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
