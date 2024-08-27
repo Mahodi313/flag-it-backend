@@ -7,5 +7,6 @@ namespace flag_it_backend.Controllers
     [ApiController]
     public class ResultController : ControllerBase
     {
+        
     }
 }
