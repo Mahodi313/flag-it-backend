@@ -35,6 +35,16 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 
 #endregion
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", options =>
+    {
+        options.AllowAnyHeader();
+        options.AllowAnyMethod();
+        options.AllowAnyOrigin();
+    });
+});
+
 
 var app = builder.Build();
 
