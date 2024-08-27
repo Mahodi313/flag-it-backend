@@ -26,9 +26,9 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 
 #region Services
 
-builder.Services.AddScoped<IGenericRepository<CountryModel>, IGenericRepository<CountryModel>>();
-builder.Services.AddScoped<IGenericRepository<QuestionModel>, IGenericRepository<QuestionModel>>();
-builder.Services.AddScoped<IGenericRepository<ResultModel>, IGenericRepository<ResultModel>>();
+builder.Services.AddScoped<IGenericRepository<CountryModel>, GenericRepository<CountryModel>>();
+builder.Services.AddScoped<IGenericRepository<QuestionModel>, GenericRepository<QuestionModel>>();
+builder.Services.AddScoped<IGenericRepository<ResultModel>, GenericRepository<ResultModel>>();
 builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 builder.Services.AddScoped<ICountryService, CountryService>();
 
