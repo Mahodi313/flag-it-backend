@@ -1,6 +1,9 @@
 using flag_it_backend.Data;
 using flag_it_backend.Models;
+using flag_it_backend.Repositories;
 using flag_it_backend.Repositories.Interfaces;
+using flag_it_backend.Services;
+using flag_it_backend.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,6 +29,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddScoped<IGenericRepository<CountryModel>, IGenericRepository<CountryModel>>();
 builder.Services.AddScoped<IGenericRepository<QuestionModel>, IGenericRepository<QuestionModel>>();
 builder.Services.AddScoped<IGenericRepository<ResultModel>, IGenericRepository<ResultModel>>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+builder.Services.AddScoped<ICountryService, CountryService>();
 
 #endregion
 
