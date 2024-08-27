@@ -1,12 +1,12 @@
 using flag_it_backend.Data;
 using flag_it_backend.Models;
+using flag_it_backend.Repositories.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -20,6 +20,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
+
+#region Services
+
+builder.Services.AddScoped<IGenericRepository<CountryModel>, IGenericRepository<CountryModel>>();
+builder.Services.AddScoped<IGenericRepository<QuestionModel>, IGenericRepository<QuestionModel>>();
+builder.Services.AddScoped<IGenericRepository<ResultModel>, IGenericRepository<ResultModel>>();
+
+#endregion
 
 
 var app = builder.Build();
