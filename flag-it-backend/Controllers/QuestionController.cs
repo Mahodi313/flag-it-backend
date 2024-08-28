@@ -1,4 +1,5 @@
 ﻿using flag_it_backend.Models;
+using flag_it_backend.Services;
 using flag_it_backend.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,9 +36,17 @@ namespace flag_it_backend.Controllers
         // Get ById
         [HttpGet("GetById/{id}")]
 
-        public async Task<ActionResult<List<QuestionModel>>> GetById(int id)
+        public async Task<ActionResult<QuestionModel>> GetById(int id)
         {
-
+            try
+            {
+                QuestionModel question = await _questionService.GetById(id);
+                return Ok(question);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
 
@@ -45,20 +54,30 @@ namespace flag_it_backend.Controllers
         [HttpGet("GetByDifficulty/{difficulty}")]
         public async Task<ActionResult<List<QuestionModel>>> GetByDiffculty(string difficulty)
         {
+            try
+            {
+                List<QuestionModel> questions = await _questionService.GetByDiffculty(difficulty);
+                return Ok(questions);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
         }
-
-
-
-
         // get Question by CountryId 
         [HttpGet("GetBycountryId/{countryId}")]
         public async Task<ActionResult<List<QuestionModel>>> GetByCountryId(int countryId)
         {
-
+            try
+            {
+                QuestionModel question = await _questionService.GetByCountryIdAsync(countryId);
+                    return Ok(question);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
-
-
-
     }
 }
