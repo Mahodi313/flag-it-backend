@@ -30,7 +30,11 @@ builder.Services.AddScoped<IGenericRepository<CountryModel>, GenericRepository<C
 builder.Services.AddScoped<IGenericRepository<QuestionModel>, GenericRepository<QuestionModel>>();
 builder.Services.AddScoped<IGenericRepository<ResultModel>, GenericRepository<ResultModel>>();
 builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+builder.Services.AddScoped<IQuestionRepository, QuestionRepository>();
+builder.Services.AddScoped<IResultRepository, ResultRepository>();
 builder.Services.AddScoped<ICountryService, CountryService>();
+builder.Services.AddScoped<IQuestionService, QuestionService>();
+builder.Services.AddScoped<IResultService, ResultService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 #endregion
