@@ -4,6 +4,7 @@ using flag_it_backend.Repositories;
 using flag_it_backend.Repositories.Interfaces;
 using flag_it_backend.Services;
 using flag_it_backend.Services.Interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -49,6 +50,13 @@ builder.Services.AddCors(options =>
         .AllowCredentials();
     });
 });
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+{
+    options.LoginPath = "/api/auth/login";
+});
+
 
 
 var app = builder.Build();
