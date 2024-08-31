@@ -108,13 +108,9 @@ namespace flag_it_backend.UnitTests.RepositoryTests
             Assert.Equal("Updated Entity", updatedEntity.Name); // Verifies that the name was updated
         }
 
-
-
-
         // Cleans up the environment after each test
         public void Dispose()
         {
-            Console.WriteLine("Calling");
             _dbContext.Database.EnsureDeleted(); // Delete the in memory db
             _dbContext.Dispose(); // Dispose of the dbcontext
             _serviceProvider.Dispose(); // Dispose of the service provider
