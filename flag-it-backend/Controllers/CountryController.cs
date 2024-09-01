@@ -32,7 +32,7 @@ namespace flag_it_backend.Controllers
         }
 
         [HttpGet("GetByContinent/{continent}")]
-        public async Task<ActionResult<List<CountryModel>>> Get(string continent)
+        public async Task<ActionResult<List<CountryModel>>> GetByContinent(string continent)
         {
             try
             {
