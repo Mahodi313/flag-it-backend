@@ -1,6 +1,7 @@
 ﻿using flag_it_backend.Models;
 using flag_it_backend.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using static flag_it_backend.DTOs.ResultDtos;
 
 namespace flag_it_backend.Controllers
 {
@@ -35,7 +36,7 @@ namespace flag_it_backend.Controllers
         // POST: api/Result
         // This method creates a new result in the service.
         [HttpPost]
-        public async Task<ActionResult<ResultModel>> Create([FromBody] ResultModel result)
+        public async Task<ActionResult> Create([FromBody] CreateDto resultModel)
         {
             if (!ModelState.IsValid)
             {
@@ -45,10 +46,10 @@ namespace flag_it_backend.Controllers
             try
             {
                 // Create the result asynchronously in the service
-                var createdResult = await _resultService.CreateAsync(result);
+                await _resultService.CreateAsync(resultModel);
                 // Return the created result with a CreatedAtAction (201) status code
                 // The CreatedAtAction method is used to return a reference to the newly created resource
-                return CreatedAtAction(nameof(GetById), new { id = createdResult.Id }, createdResult);
+                return Ok()/*CreatedAtActi(nameof(GetById), new { id = resultModel.Id }, resultModel)*/;
             }
             catch (Exception ex)
             {
