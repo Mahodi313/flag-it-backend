@@ -1,12 +1,12 @@
-﻿using flag_it_backend.Models;
+﻿using static flag_it_backend.DTOs.ResultDtos;
 
 namespace flag_it_backend.Services.Interfaces
 {
     public interface IResultService
     {
-        Task<List<ResultModel>> GetAllAsync();
-        Task<ResultModel> GetByIdAsync(int id);
-        Task<List<ResultModel>> GetByUserIdAsync(string userId);
-        Task<ResultModel> CreateAsync(ResultModel result);
+        Task<List<ResultDto>> GetAllAsync();
+        Task<GetByIdDto> GetByIdAsync(int id);
+        Task<List<ResultDto>> GetByUserIdAsync(string userId);
+        Task CreateAsync(CreateDto resultModel);
     }
 }
