@@ -12,8 +12,8 @@ using flag_it_backend.Data;
 namespace flag_it_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240830105453_Länder")]
-    partial class Länder
+    [Migration("20240903101211_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -254,7 +254,7 @@ namespace flag_it_backend.Migrations
                             Id = 1,
                             Continent = "Asien",
                             Description = "Afghanistan, beläget i Centralasien, blev självständigt från Storbritannien den 19 augusti 1919. Landet har cirka 38 miljoner invånare. De officiella språken är pashto och dari.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/af.svg",
                             Name = "Afghanistan"
                         },
                         new
@@ -262,7 +262,7 @@ namespace flag_it_backend.Migrations
                             Id = 2,
                             Continent = "Europa",
                             Description = "Albanien, beläget i Sydöstra Europa, blev självständigt från Osmanska riket den 28 november 1912. Landet har cirka 2,9 miljoner invånare. Det officiella språket är albanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/al.svg",
                             Name = "Albanien"
                         },
                         new
@@ -270,7 +270,7 @@ namespace flag_it_backend.Migrations
                             Id = 3,
                             Continent = "Afrika",
                             Description = "Algeriet, beläget i Nordafrika, blev självständigt från Frankrike den 5 juli 1962. Landet har cirka 44 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/dz.svg",
                             Name = "Algeriet"
                         },
                         new
@@ -278,7 +278,7 @@ namespace flag_it_backend.Migrations
                             Id = 4,
                             Continent = "Europa",
                             Description = "Andorra, en liten landlocked nation i Pyrenéerna mellan Frankrike och Spanien, har cirka 77 000 invånare. Det officiella språket är katalanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ad.svg",
                             Name = "Andorra"
                         },
                         new
@@ -286,7 +286,7 @@ namespace flag_it_backend.Migrations
                             Id = 5,
                             Continent = "Afrika",
                             Description = "Angola, beläget på västkusten av södra Afrika, blev självständigt från Portugal den 11 november 1975. Landet har cirka 32 miljoner invånare. Det officiella språket är portugisiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ao.svg",
                             Name = "Angola"
                         },
                         new
@@ -294,7 +294,7 @@ namespace flag_it_backend.Migrations
                             Id = 6,
                             Continent = "Nordamerika",
                             Description = "Antigua och Barbuda är en ö-nation i Karibien som blev självständigt från Storbritannien den 1 november 1981. Landet har cirka 97 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ag.svg",
                             Name = "Antigua och Barbuda"
                         },
                         new
@@ -302,7 +302,7 @@ namespace flag_it_backend.Migrations
                             Id = 7,
                             Continent = "Sydamerika",
                             Description = "Argentina, beläget i Sydamerika, förklarade sig självständigt från Spanien den 9 juli 1816. Landet har cirka 45 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ar.svg",
                             Name = "Argentina"
                         },
                         new
@@ -310,7 +310,7 @@ namespace flag_it_backend.Migrations
                             Id = 8,
                             Continent = "Asien",
                             Description = "Armenien, beläget i södra Kaukasus, blev självständigt från Sovjetunionen den 21 september 1991. Landet har cirka 3 miljoner invånare. Det officiella språket är armeniska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/am.svg",
                             Name = "Armenien"
                         },
                         new
@@ -318,7 +318,7 @@ namespace flag_it_backend.Migrations
                             Id = 9,
                             Continent = "Oceanien",
                             Description = "Australien, en kontinent och land i Oceanien, blev självständigt från Storbritannien den 1 januari 1901. Landet har cirka 25 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/au.svg",
                             Name = "Australien"
                         },
                         new
@@ -326,7 +326,7 @@ namespace flag_it_backend.Migrations
                             Id = 10,
                             Continent = "Europa",
                             Description = "Österrike, beläget i Centraleuropa, har en historia av självständighet som går tillbaka till 1156. Landet har cirka 9 miljoner invånare. Det officiella språket är tyska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/at.svg",
                             Name = "Österrike"
                         },
                         new
@@ -334,7 +334,7 @@ namespace flag_it_backend.Migrations
                             Id = 11,
                             Continent = "Asien",
                             Description = "Azerbajdzjan, beläget i södra Kaukasus, blev självständigt från Sovjetunionen den 30 augusti 1991. Landet har cirka 10 miljoner invånare. Det officiella språket är azerbajdzjanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/az.svg",
                             Name = "Azerbajdzjan"
                         },
                         new
@@ -342,7 +342,7 @@ namespace flag_it_backend.Migrations
                             Id = 12,
                             Continent = "Nordamerika",
                             Description = "Bahamas, en ö-nation i Karibien, blev självständigt från Storbritannien den 10 juli 1973. Landet har cirka 400 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bs.svg",
                             Name = "Bahamas"
                         },
                         new
@@ -350,7 +350,7 @@ namespace flag_it_backend.Migrations
                             Id = 13,
                             Continent = "Asien",
                             Description = "Bahrain, en ö-nation i Persiska viken, blev självständigt från Storbritannien den 15 augusti 1971. Landet har cirka 1,7 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bh.svg",
                             Name = "Bahrain"
                         },
                         new
@@ -358,7 +358,7 @@ namespace flag_it_backend.Migrations
                             Id = 14,
                             Continent = "Asien",
                             Description = "Bangladesh, beläget i Sydasien, blev självständigt från Pakistan den 26 mars 1971. Landet har cirka 163 miljoner invånare. Det officiella språket är bengali.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bd.svg",
                             Name = "Bangladesh"
                         },
                         new
@@ -366,7 +366,7 @@ namespace flag_it_backend.Migrations
                             Id = 15,
                             Continent = "Nordamerika",
                             Description = "Barbados, en ö-nation i Karibien, blev självständigt från Storbritannien den 30 november 1966. Landet har cirka 287 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bb.svg",
                             Name = "Barbados"
                         },
                         new
@@ -374,7 +374,7 @@ namespace flag_it_backend.Migrations
                             Id = 16,
                             Continent = "Europa",
                             Description = "Vitryssland, beläget i Östeuropa, blev självständigt från Sovjetunionen den 25 augusti 1991. Landet har cirka 9,4 miljoner invånare. Det officiella språket är vitryska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/by.svg",
                             Name = "Vitryssland"
                         },
                         new
@@ -382,7 +382,7 @@ namespace flag_it_backend.Migrations
                             Id = 17,
                             Continent = "Europa",
                             Description = "Belgien, beläget i Västeuropa, blev självständigt från Nederländerna den 4 oktober 1830. Landet har cirka 11,5 miljoner invånare. De officiella språken är nederländska, franska och tyska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/be.svg",
                             Name = "Belgien"
                         },
                         new
@@ -390,7 +390,7 @@ namespace flag_it_backend.Migrations
                             Id = 18,
                             Continent = "Nordamerika",
                             Description = "Belize, ett land i Centralamerika, blev självständigt från Storbritannien den 21 september 1981. Landet har cirka 400 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bz.svg",
                             Name = "Belize"
                         },
                         new
@@ -398,7 +398,7 @@ namespace flag_it_backend.Migrations
                             Id = 19,
                             Continent = "Afrika",
                             Description = "Benin, ett västafrikanskt land, blev självständigt från Frankrike den 1 augusti 1960. Landet har cirka 12 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bj.svg",
                             Name = "Benin"
                         },
                         new
@@ -406,7 +406,7 @@ namespace flag_it_backend.Migrations
                             Id = 20,
                             Continent = "Asien",
                             Description = "Bhutan, ett litet kungarike i Himalaya, har aldrig varit under utländsk kontroll. Landet har cirka 770 000 invånare. Det officiella språket är dzongkha.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bt.svg",
                             Name = "Bhutan"
                         },
                         new
@@ -414,7 +414,7 @@ namespace flag_it_backend.Migrations
                             Id = 21,
                             Continent = "Sydamerika",
                             Description = "Bolivia, beläget i Sydamerika, blev självständigt från Spanien den 6 augusti 1825. Landet har cirka 11 miljoner invånare. De officiella språken är spanska och flera inhemska språk.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bo.svg",
                             Name = "Bolivia"
                         },
                         new
@@ -422,7 +422,7 @@ namespace flag_it_backend.Migrations
                             Id = 22,
                             Continent = "Europa",
                             Description = "Bosnien och Hercegovina, beläget i Balkanregionen i Sydöstra Europa, blev självständigt från Jugoslavien den 1 mars 1992. Landet har cirka 3,5 miljoner invånare. De officiella språken är bosniska, kroatiska och serbiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ba.svg",
                             Name = "Bosnien och Hercegovina"
                         },
                         new
@@ -430,7 +430,7 @@ namespace flag_it_backend.Migrations
                             Id = 23,
                             Continent = "Afrika",
                             Description = "Botswana, beläget i södra Afrika, blev självständigt från Storbritannien den 30 september 1966. Landet har cirka 2,3 miljoner invånare. Det officiella språket är engelska, men setswana talas också brett.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bw.svg",
                             Name = "Botswana"
                         },
                         new
@@ -438,7 +438,7 @@ namespace flag_it_backend.Migrations
                             Id = 24,
                             Continent = "Sydamerika",
                             Description = "Brasilien, det största landet i Sydamerika, blev självständigt från Portugal den 7 september 1822. Landet har cirka 211 miljoner invånare. Det officiella språket är portugisiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/br.svg",
                             Name = "Brasilien"
                         },
                         new
@@ -446,7 +446,7 @@ namespace flag_it_backend.Migrations
                             Id = 25,
                             Continent = "Asien",
                             Description = "Brunei, beläget på ön Borneo i Sydostasien, blev självständigt från Storbritannien den 1 januari 1984. Landet har cirka 437 000 invånare. Det officiella språket är malajiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bn.svg",
                             Name = "Brunei"
                         },
                         new
@@ -454,7 +454,7 @@ namespace flag_it_backend.Migrations
                             Id = 26,
                             Continent = "Europa",
                             Description = "Bulgarien, beläget i Sydöstra Europa, blev självständigt från Osmanska riket den 22 september 1908. Landet har cirka 7 miljoner invånare. Det officiella språket är bulgariska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bg.svg",
                             Name = "Bulgarien"
                         },
                         new
@@ -462,7 +462,7 @@ namespace flag_it_backend.Migrations
                             Id = 27,
                             Continent = "Afrika",
                             Description = "Burkina Faso, ett land i Västafrika, blev självständigt från Frankrike den 5 augusti 1960. Landet har cirka 21 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bf.svg",
                             Name = "Burkina Faso"
                         },
                         new
@@ -470,7 +470,7 @@ namespace flag_it_backend.Migrations
                             Id = 28,
                             Continent = "Afrika",
                             Description = "Burundi, beläget i Östafrika, blev självständigt från Belgien den 1 juli 1962. Landet har cirka 12 miljoner invånare. De officiella språken är kirundi, franska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/bi.svg",
                             Name = "Burundi"
                         },
                         new
@@ -478,7 +478,7 @@ namespace flag_it_backend.Migrations
                             Id = 29,
                             Continent = "Afrika",
                             Description = "Cabo Verde, en ögrupp utanför nordvästra Afrikas kust, blev självständigt från Portugal den 5 juli 1975. Landet har cirka 550 000 invånare. Det officiella språket är portugisiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cv.svg",
                             Name = "Cabo Verde"
                         },
                         new
@@ -486,7 +486,7 @@ namespace flag_it_backend.Migrations
                             Id = 30,
                             Continent = "Asien",
                             Description = "Kambodja, beläget i Sydostasien, blev självständigt från Frankrike den 9 november 1953. Landet har cirka 16 miljoner invånare. Det officiella språket är khmer.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/kh.svg",
                             Name = "Kambodja"
                         },
                         new
@@ -494,7 +494,7 @@ namespace flag_it_backend.Migrations
                             Id = 31,
                             Continent = "Afrika",
                             Description = "Kamerun, ett land i Centralafrika, blev självständigt från Frankrike den 1 januari 1960. Landet har cirka 26 miljoner invånare. De officiella språken är franska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cm.svg",
                             Name = "Kamerun"
                         },
                         new
@@ -502,7 +502,7 @@ namespace flag_it_backend.Migrations
                             Id = 32,
                             Continent = "Nordamerika",
                             Description = "Kanada, världens näst största land till ytan, blev självständigt från Storbritannien den 1 juli 1867. Landet har cirka 37 miljoner invånare. De officiella språken är engelska och franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ca.svg",
                             Name = "Kanada"
                         },
                         new
@@ -510,7 +510,7 @@ namespace flag_it_backend.Migrations
                             Id = 33,
                             Continent = "Afrika",
                             Description = "Centralafrikanska republiken, beläget i hjärtat av Afrika, blev självständigt från Frankrike den 13 augusti 1960. Landet har cirka 4,8 miljoner invånare. De officiella språken är franska och sango.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cf.svg",
                             Name = "Centralafrikanska republiken"
                         },
                         new
@@ -518,7 +518,7 @@ namespace flag_it_backend.Migrations
                             Id = 34,
                             Continent = "Afrika",
                             Description = "Tchad, beläget i Nord-Centralafrika, blev självständigt från Frankrike den 11 augusti 1960. Landet har cirka 17 miljoner invånare. De officiella språken är franska och arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/td.svg",
                             Name = "Tchad"
                         },
                         new
@@ -526,7 +526,7 @@ namespace flag_it_backend.Migrations
                             Id = 35,
                             Continent = "Sydamerika",
                             Description = "Chile, beläget i Sydamerika, blev självständigt från Spanien den 18 september 1810. Landet har cirka 19 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cl.svg",
                             Name = "Chile"
                         },
                         new
@@ -534,7 +534,7 @@ namespace flag_it_backend.Migrations
                             Id = 36,
                             Continent = "Asien",
                             Description = "Kina, världens mest folkrika land med cirka 1,4 miljarder invånare, är en av världens äldsta kontinuerliga civilisationer. Landet grundades som Folkrepubliken Kina den 1 oktober 1949. Det officiella språket är mandarin.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cn.svg",
                             Name = "Kina"
                         },
                         new
@@ -542,7 +542,7 @@ namespace flag_it_backend.Migrations
                             Id = 37,
                             Continent = "Sydamerika",
                             Description = "Colombia, beläget i norra Sydamerika, blev självständigt från Spanien den 20 juli 1810. Landet har cirka 50 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/co.svg",
                             Name = "Colombia"
                         },
                         new
@@ -550,7 +550,7 @@ namespace flag_it_backend.Migrations
                             Id = 38,
                             Continent = "Afrika",
                             Description = "Komorerna är en ögruppsnation utanför Afrikas östkust som blev självständigt från Frankrike den 6 juli 1975. Landet har cirka 870 000 invånare. De officiella språken är komoriska, arabiska och franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/km.svg",
                             Name = "Komorerna"
                         },
                         new
@@ -558,7 +558,7 @@ namespace flag_it_backend.Migrations
                             Id = 39,
                             Continent = "Afrika",
                             Description = "Kongo-Brazzaville, officiellt Republiken Kongo, blev självständigt från Frankrike den 15 augusti 1960. Landet har cirka 5,5 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cg.svg",
                             Name = "Kongo-Brazzaville"
                         },
                         new
@@ -566,7 +566,7 @@ namespace flag_it_backend.Migrations
                             Id = 40,
                             Continent = "Afrika",
                             Description = "Kongo-Kinshasa, officiellt Demokratiska republiken Kongo, blev självständigt från Belgien den 30 juni 1960. Landet har cirka 89 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cd.svg",
                             Name = "Kongo-Kinshasa"
                         },
                         new
@@ -574,7 +574,7 @@ namespace flag_it_backend.Migrations
                             Id = 41,
                             Continent = "Nordamerika",
                             Description = "Costa Rica, beläget i Centralamerika, blev självständigt från Spanien den 15 september 1821. Landet har cirka 5 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cr.svg",
                             Name = "Costa Rica"
                         },
                         new
@@ -582,7 +582,7 @@ namespace flag_it_backend.Migrations
                             Id = 42,
                             Continent = "Europa",
                             Description = "Kroatien, beläget i Sydöstra Europa, blev självständigt från Jugoslavien den 25 juni 1991. Landet har cirka 4 miljoner invånare. Det officiella språket är kroatiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/hr.svg",
                             Name = "Kroatien"
                         },
                         new
@@ -590,7 +590,7 @@ namespace flag_it_backend.Migrations
                             Id = 43,
                             Continent = "Nordamerika",
                             Description = "Kuba, en ö-nation i Karibien, blev självständigt från Spanien den 20 maj 1902. Landet har cirka 11 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cu.svg",
                             Name = "Kuba"
                         },
                         new
@@ -598,7 +598,7 @@ namespace flag_it_backend.Migrations
                             Id = 44,
                             Continent = "Asien",
                             Description = "Cypern, en ö i östra Medelhavet, blev självständigt från Storbritannien den 16 augusti 1960. Landet har cirka 1,2 miljoner invånare. De officiella språken är grekiska och turkiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cy.svg",
                             Name = "Cypern"
                         },
                         new
@@ -606,7 +606,7 @@ namespace flag_it_backend.Migrations
                             Id = 45,
                             Continent = "Europa",
                             Description = "Tjeckien, beläget i Centraleuropa, blev självständigt som Tjeckoslovakien från Österrike-Ungern den 28 oktober 1918. Landet har cirka 10,7 miljoner invånare. Det officiella språket är tjeckiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/cz.svg",
                             Name = "Tjeckien"
                         },
                         new
@@ -614,7 +614,7 @@ namespace flag_it_backend.Migrations
                             Id = 46,
                             Continent = "Europa",
                             Description = "Danmark, ett nordiskt land i Europa, har en lång historia som självständig nation och är världens äldsta monarki. Landet har cirka 5,8 miljoner invånare. Det officiella språket är danska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/dk.svg",
                             Name = "Danmark"
                         },
                         new
@@ -622,7 +622,7 @@ namespace flag_it_backend.Migrations
                             Id = 47,
                             Continent = "Afrika",
                             Description = "Djibouti, beläget i Afrikas horn, blev självständigt från Frankrike den 27 juni 1977. Landet har cirka 1 miljon invånare. De officiella språken är franska och arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/dj.svg",
                             Name = "Djibouti"
                         },
                         new
@@ -630,7 +630,7 @@ namespace flag_it_backend.Migrations
                             Id = 48,
                             Continent = "Nordamerika",
                             Description = "Dominica, en ö-nation i Karibien, blev självständigt från Storbritannien den 3 november 1978. Landet har cirka 71 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/dm.svg",
                             Name = "Dominica"
                         },
                         new
@@ -638,7 +638,7 @@ namespace flag_it_backend.Migrations
                             Id = 49,
                             Continent = "Nordamerika",
                             Description = "Dominikanska republiken, beläget på ön Hispaniola i Karibien, blev självständigt från Haiti den 27 februari 1844. Landet har cirka 10,8 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/do.svg",
                             Name = "Dominikanska republiken"
                         },
                         new
@@ -646,7 +646,7 @@ namespace flag_it_backend.Migrations
                             Id = 50,
                             Continent = "Asien",
                             Description = "Östtimor, beläget i Sydostasien, blev självständigt från Indonesien den 20 maj 2002. Landet har cirka 1,3 miljoner invånare. Det officiella språket är portugisiska och tetum.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tl.svg",
                             Name = "Östtimor"
                         },
                         new
@@ -654,7 +654,7 @@ namespace flag_it_backend.Migrations
                             Id = 51,
                             Continent = "Sydamerika",
                             Description = "Ecuador, beläget i nordvästra Sydamerika, blev självständigt från Spanien den 24 maj 1822. Landet har cirka 17 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ec.svg",
                             Name = "Ecuador"
                         },
                         new
@@ -662,7 +662,7 @@ namespace flag_it_backend.Migrations
                             Id = 52,
                             Continent = "Afrika",
                             Description = "Egypten, beläget i Nordafrika, blev självständigt från Storbritannien den 28 februari 1922. Landet har cirka 100 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/eg.svg",
                             Name = "Egypten"
                         },
                         new
@@ -670,7 +670,7 @@ namespace flag_it_backend.Migrations
                             Id = 53,
                             Continent = "Nordamerika",
                             Description = "El Salvador, beläget i Centralamerika, blev självständigt från Spanien den 15 september 1821. Landet har cirka 6,5 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sv.svg",
                             Name = "El Salvador"
                         },
                         new
@@ -678,7 +678,7 @@ namespace flag_it_backend.Migrations
                             Id = 54,
                             Continent = "Afrika",
                             Description = "Ekvatorialguinea, beläget i Centralafrika, blev självständigt från Spanien den 12 oktober 1968. Landet har cirka 1,4 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gq.svg",
                             Name = "Ekvatorialguinea"
                         },
                         new
@@ -686,7 +686,7 @@ namespace flag_it_backend.Migrations
                             Id = 55,
                             Continent = "Afrika",
                             Description = "Eritrea, beläget i östra Afrika vid Röda havet, blev självständigt från Etiopien den 24 maj 1993. Landet har cirka 5,3 miljoner invånare. De officiella språken är tigrinska, arabiska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/er.svg",
                             Name = "Eritrea"
                         },
                         new
@@ -694,7 +694,7 @@ namespace flag_it_backend.Migrations
                             Id = 56,
                             Continent = "Europa",
                             Description = "Estland, beläget i norra Europa vid Östersjön, blev självständigt från Sovjetunionen den 20 augusti 1991. Landet har cirka 1,3 miljoner invånare. Det officiella språket är estniska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ee.svg",
                             Name = "Estland"
                         },
                         new
@@ -702,7 +702,7 @@ namespace flag_it_backend.Migrations
                             Id = 57,
                             Continent = "Afrika",
                             Description = "Eswatini, tidigare känt som Swaziland, är ett litet land i södra Afrika. Det blev självständigt från Storbritannien den 6 september 1968. Landet har cirka 1,1 miljoner invånare. De officiella språken är swazi och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sz.svg",
                             Name = "Eswatini"
                         },
                         new
@@ -710,7 +710,7 @@ namespace flag_it_backend.Migrations
                             Id = 58,
                             Continent = "Afrika",
                             Description = "Etiopien, beläget i östra Afrika, är en av världens äldsta nationer och har aldrig varit koloniserat. Landet har cirka 115 miljoner invånare. Det officiella språket är amhariska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/et.svg",
                             Name = "Etiopien"
                         },
                         new
@@ -718,7 +718,7 @@ namespace flag_it_backend.Migrations
                             Id = 59,
                             Continent = "Oceanien",
                             Description = "Fiji, en ögrupp i Stilla havet, blev självständigt från Storbritannien den 10 oktober 1970. Landet har cirka 900 000 invånare. De officiella språken är engelska, fijianska och hindi.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/fj.svg",
                             Name = "Fiji"
                         },
                         new
@@ -726,7 +726,7 @@ namespace flag_it_backend.Migrations
                             Id = 60,
                             Continent = "Europa",
                             Description = "Finland, beläget i norra Europa, blev självständigt från Ryssland den 6 december 1917. Landet har cirka 5,5 miljoner invånare. De officiella språken är finska och svenska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/fi.svg",
                             Name = "Finland"
                         },
                         new
@@ -734,7 +734,7 @@ namespace flag_it_backend.Migrations
                             Id = 61,
                             Continent = "Europa",
                             Description = "Frankrike, beläget i Västeuropa, är en av världens äldsta nationer. Landet har cirka 67 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/fr.svg",
                             Name = "Frankrike"
                         },
                         new
@@ -742,7 +742,7 @@ namespace flag_it_backend.Migrations
                             Id = 62,
                             Continent = "Afrika",
                             Description = "Gabon, beläget i Centralafrika, blev självständigt från Frankrike den 17 augusti 1960. Landet har cirka 2,2 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ga.svg",
                             Name = "Gabon"
                         },
                         new
@@ -750,7 +750,7 @@ namespace flag_it_backend.Migrations
                             Id = 63,
                             Continent = "Afrika",
                             Description = "Gambia, ett litet land i Västafrika, blev självständigt från Storbritannien den 18 februari 1965. Landet har cirka 2,4 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gm.svg",
                             Name = "Gambia"
                         },
                         new
@@ -758,7 +758,7 @@ namespace flag_it_backend.Migrations
                             Id = 64,
                             Continent = "Asien",
                             Description = "Georgien, beläget vid gränsen mellan Europa och Asien, blev självständigt från Sovjetunionen den 9 april 1991. Landet har cirka 3,7 miljoner invånare. Det officiella språket är georgiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ge.svg",
                             Name = "Georgien"
                         },
                         new
@@ -766,7 +766,7 @@ namespace flag_it_backend.Migrations
                             Id = 65,
                             Continent = "Europa",
                             Description = "Tyskland, beläget i Centraleuropa, återförenades som en nation den 3 oktober 1990 efter att ha varit uppdelat efter andra världskriget. Landet har cirka 83 miljoner invånare. Det officiella språket är tyska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/de.svg",
                             Name = "Tyskland"
                         },
                         new
@@ -774,7 +774,7 @@ namespace flag_it_backend.Migrations
                             Id = 66,
                             Continent = "Afrika",
                             Description = "Ghana, beläget i Västafrika, blev självständigt från Storbritannien den 6 mars 1957. Landet har cirka 31 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gh.svg",
                             Name = "Ghana"
                         },
                         new
@@ -782,7 +782,7 @@ namespace flag_it_backend.Migrations
                             Id = 67,
                             Continent = "Europa",
                             Description = "Grekland, beläget i Sydöstra Europa, är känt som demokratins födelseplats. Landet blev självständigt från Osmanska riket den 25 mars 1821. Landet har cirka 10,4 miljoner invånare. Det officiella språket är grekiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gr.svg",
                             Name = "Grekland"
                         },
                         new
@@ -790,7 +790,7 @@ namespace flag_it_backend.Migrations
                             Id = 68,
                             Continent = "Nordamerika",
                             Description = "Grenada, en ö-nation i Karibien, blev självständigt från Storbritannien den 7 februari 1974. Landet har cirka 112 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gd.svg",
                             Name = "Grenada"
                         },
                         new
@@ -798,7 +798,7 @@ namespace flag_it_backend.Migrations
                             Id = 69,
                             Continent = "Nordamerika",
                             Description = "Guatemala, beläget i Centralamerika, blev självständigt från Spanien den 15 september 1821. Landet har cirka 18 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gt.svg",
                             Name = "Guatemala"
                         },
                         new
@@ -806,7 +806,7 @@ namespace flag_it_backend.Migrations
                             Id = 70,
                             Continent = "Afrika",
                             Description = "Guinea, beläget i Västafrika, blev självständigt från Frankrike den 2 oktober 1958. Landet har cirka 13 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gn.svg",
                             Name = "Guinea"
                         },
                         new
@@ -814,7 +814,7 @@ namespace flag_it_backend.Migrations
                             Id = 71,
                             Continent = "Afrika",
                             Description = "Guinea-Bissau, beläget i Västafrika, blev självständigt från Portugal den 24 september 1973. Landet har cirka 2 miljoner invånare. Det officiella språket är portugisiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gw.svg",
                             Name = "Guinea-Bissau"
                         },
                         new
@@ -822,7 +822,7 @@ namespace flag_it_backend.Migrations
                             Id = 72,
                             Continent = "Sydamerika",
                             Description = "Guyana, beläget i norra Sydamerika, blev självständigt från Storbritannien den 26 maj 1966. Landet har cirka 786 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gy.svg",
                             Name = "Guyana"
                         },
                         new
@@ -830,7 +830,7 @@ namespace flag_it_backend.Migrations
                             Id = 73,
                             Continent = "Nordamerika",
                             Description = "Haiti, beläget på ön Hispaniola i Karibien, blev självständigt från Frankrike den 1 januari 1804. Landet har cirka 11 miljoner invånare. De officiella språken är franska och haitisk kreol.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ht.svg",
                             Name = "Haiti"
                         },
                         new
@@ -838,7 +838,7 @@ namespace flag_it_backend.Migrations
                             Id = 74,
                             Continent = "Nordamerika",
                             Description = "Honduras, beläget i Centralamerika, blev självständigt från Spanien den 15 september 1821. Landet har cirka 9,9 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/hn.svg",
                             Name = "Honduras"
                         },
                         new
@@ -846,7 +846,7 @@ namespace flag_it_backend.Migrations
                             Id = 75,
                             Continent = "Europa",
                             Description = "Ungern, beläget i Centraleuropa, blev en självständig stat efter första världskriget den 31 oktober 1918. Landet har cirka 9,6 miljoner invånare. Det officiella språket är ungerska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/hu.svg",
                             Name = "Ungern"
                         },
                         new
@@ -854,7 +854,7 @@ namespace flag_it_backend.Migrations
                             Id = 76,
                             Continent = "Europa",
                             Description = "Island, beläget i norra Atlanten, blev en självständig republik den 17 juni 1944. Landet har cirka 364 000 invånare. Det officiella språket är isländska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/is.svg",
                             Name = "Island"
                         },
                         new
@@ -862,7 +862,7 @@ namespace flag_it_backend.Migrations
                             Id = 77,
                             Continent = "Asien",
                             Description = "Indien, beläget i Sydasien, blev självständigt från Storbritannien den 15 augusti 1947. Landet har cirka 1,3 miljarder invånare. De officiella språken är hindi och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/in.svg",
                             Name = "Indien"
                         },
                         new
@@ -870,7 +870,7 @@ namespace flag_it_backend.Migrations
                             Id = 78,
                             Continent = "Asien",
                             Description = "Indonesien, en ö-nation i Sydostasien, blev självständigt från Nederländerna den 17 augusti 1945. Landet har cirka 270 miljoner invånare. Det officiella språket är indonesiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/id.svg",
                             Name = "Indonesien"
                         },
                         new
@@ -878,7 +878,7 @@ namespace flag_it_backend.Migrations
                             Id = 79,
                             Continent = "Asien",
                             Description = "Iran, beläget i Mellanöstern, blev en islamisk republik efter revolutionen den 11 februari 1979. Landet har cirka 83 miljoner invånare. Det officiella språket är persiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ir.svg",
                             Name = "Iran"
                         },
                         new
@@ -886,7 +886,7 @@ namespace flag_it_backend.Migrations
                             Id = 80,
                             Continent = "Asien",
                             Description = "Irak, beläget i Mellanöstern, blev självständigt från Storbritannien den 3 oktober 1932. Landet har cirka 40 miljoner invånare. De officiella språken är arabiska och kurdiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/iq.svg",
                             Name = "Irak"
                         },
                         new
@@ -894,7 +894,7 @@ namespace flag_it_backend.Migrations
                             Id = 81,
                             Continent = "Europa",
                             Description = "Irland, beläget i nordvästra Europa, blev en självständig stat från Storbritannien den 6 december 1922. Landet har cirka 4,9 miljoner invånare. Det officiella språket är engelska och iriska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ie.svg",
                             Name = "Irland"
                         },
                         new
@@ -902,7 +902,7 @@ namespace flag_it_backend.Migrations
                             Id = 82,
                             Continent = "Europa",
                             Description = "Italien, beläget i södra Europa på den apenninska halvön, blev en enad nation 1861. Landet har cirka 60 miljoner invånare. Det officiella språket är italienska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/it.svg",
                             Name = "Italien"
                         },
                         new
@@ -910,7 +910,7 @@ namespace flag_it_backend.Migrations
                             Id = 83,
                             Continent = "Afrika",
                             Description = "Elfenbenskusten, beläget i Västafrika, blev självständigt från Frankrike den 7 augusti 1960. Landet har cirka 26 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ci.svg",
                             Name = "Elfenbenskusten"
                         },
                         new
@@ -918,7 +918,7 @@ namespace flag_it_backend.Migrations
                             Id = 84,
                             Continent = "Nordamerika",
                             Description = "Jamaica, en ö-nation i Karibien, blev självständigt från Storbritannien den 6 augusti 1962. Landet har cirka 3 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/jm.svg",
                             Name = "Jamaica"
                         },
                         new
@@ -926,7 +926,7 @@ namespace flag_it_backend.Migrations
                             Id = 85,
                             Continent = "Asien",
                             Description = "Japan, en ö-nation i Östasien, har en lång historia som en enad stat. Landet har cirka 126 miljoner invånare. Det officiella språket är japanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/jp.svg",
                             Name = "Japan"
                         },
                         new
@@ -934,7 +934,7 @@ namespace flag_it_backend.Migrations
                             Id = 86,
                             Continent = "Asien",
                             Description = "Jordanien, beläget i Mellanöstern, blev självständigt från Storbritannien den 25 maj 1946. Landet har cirka 10 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/jo.svg",
                             Name = "Jordanien"
                         },
                         new
@@ -942,7 +942,7 @@ namespace flag_it_backend.Migrations
                             Id = 87,
                             Continent = "Asien",
                             Description = "Kazakstan, beläget i Centralasien, blev självständigt från Sovjetunionen den 16 december 1991. Landet har cirka 18 miljoner invånare. De officiella språken är kazakiska och ryska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/kz.svg",
                             Name = "Kazakstan"
                         },
                         new
@@ -950,7 +950,7 @@ namespace flag_it_backend.Migrations
                             Id = 88,
                             Continent = "Afrika",
                             Description = "Kenya, beläget i Östafrika, blev självständigt från Storbritannien den 12 december 1963. Landet har cirka 54 miljoner invånare. De officiella språken är engelska och swahili.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ke.svg",
                             Name = "Kenya"
                         },
                         new
@@ -958,7 +958,7 @@ namespace flag_it_backend.Migrations
                             Id = 89,
                             Continent = "Oceanien",
                             Description = "Kiribati, en ö-nation i Stilla havet, blev självständigt från Storbritannien den 12 juli 1979. Landet har cirka 119 000 invånare. De officiella språken är engelska och kiribatiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ki.svg",
                             Name = "Kiribati"
                         },
                         new
@@ -966,7 +966,7 @@ namespace flag_it_backend.Migrations
                             Id = 90,
                             Continent = "Asien",
                             Description = "Nordkorea, officiellt Demokratiska folkrepubliken Korea, grundades den 9 september 1948 efter Koreas delning. Landet har cirka 25 miljoner invånare. Det officiella språket är koreanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/kp.svg",
                             Name = "Nordkorea"
                         },
                         new
@@ -974,7 +974,7 @@ namespace flag_it_backend.Migrations
                             Id = 91,
                             Continent = "Asien",
                             Description = "Sydkorea, officiellt Republiken Korea, grundades den 15 augusti 1948 efter Koreas delning. Landet har cirka 51 miljoner invånare. Det officiella språket är koreanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/kr.svg",
                             Name = "Sydkorea"
                         },
                         new
@@ -982,7 +982,7 @@ namespace flag_it_backend.Migrations
                             Id = 92,
                             Continent = "Europa",
                             Description = "Kosovo, beläget på Balkanhalvön, förklarade självständighet från Serbien den 17 februari 2008. Landet har cirka 1,8 miljoner invånare. Det officiella språket är albanska och serbiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/xk.svg",
                             Name = "Kosovo"
                         },
                         new
@@ -990,7 +990,7 @@ namespace flag_it_backend.Migrations
                             Id = 93,
                             Continent = "Asien",
                             Description = "Kuwait, beläget i Mellanöstern vid Persiska viken, blev självständigt från Storbritannien den 19 juni 1961. Landet har cirka 4,2 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/kw.svg",
                             Name = "Kuwait"
                         },
                         new
@@ -998,7 +998,7 @@ namespace flag_it_backend.Migrations
                             Id = 94,
                             Continent = "Asien",
                             Description = "Kirgizistan, beläget i Centralasien, blev självständigt från Sovjetunionen den 31 augusti 1991. Landet har cirka 6,5 miljoner invånare. De officiella språken är kirgiziska och ryska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/kg.svg",
                             Name = "Kirgizistan"
                         },
                         new
@@ -1006,7 +1006,7 @@ namespace flag_it_backend.Migrations
                             Id = 95,
                             Continent = "Asien",
                             Description = "Laos, beläget i Sydostasien, blev självständigt från Frankrike den 22 oktober 1953. Landet har cirka 7,3 miljoner invånare. Det officiella språket är laotiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/la.svg",
                             Name = "Laos"
                         },
                         new
@@ -1014,7 +1014,7 @@ namespace flag_it_backend.Migrations
                             Id = 96,
                             Continent = "Europa",
                             Description = "Lettland, beläget i norra Europa vid Östersjön, blev självständigt från Sovjetunionen den 21 augusti 1991. Landet har cirka 1,9 miljoner invånare. Det officiella språket är lettiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/lv.svg",
                             Name = "Lettland"
                         },
                         new
@@ -1022,7 +1022,7 @@ namespace flag_it_backend.Migrations
                             Id = 97,
                             Continent = "Asien",
                             Description = "Libanon, beläget i Mellanöstern vid Medelhavet, blev självständigt från Frankrike den 22 november 1943. Landet har cirka 6,8 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/lb.svg",
                             Name = "Libanon"
                         },
                         new
@@ -1030,7 +1030,7 @@ namespace flag_it_backend.Migrations
                             Id = 98,
                             Continent = "Afrika",
                             Description = "Lesotho, ett litet bergigt land omgiven av Sydafrika, blev självständigt från Storbritannien den 4 oktober 1966. Landet har cirka 2 miljoner invånare. De officiella språken är sesotho och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ls.svg",
                             Name = "Lesotho"
                         },
                         new
@@ -1038,7 +1038,7 @@ namespace flag_it_backend.Migrations
                             Id = 99,
                             Continent = "Afrika",
                             Description = "Liberia, beläget i Västafrika, grundades av frigivna amerikanska slavar och blev en självständig stat den 26 juli 1847. Landet har cirka 5 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/lr.svg",
                             Name = "Liberia"
                         },
                         new
@@ -1046,7 +1046,7 @@ namespace flag_it_backend.Migrations
                             Id = 100,
                             Continent = "Afrika",
                             Description = "Libyen, beläget i Nordafrika vid Medelhavet, blev självständigt från Italien den 24 december 1951. Landet har cirka 6,8 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ly.svg",
                             Name = "Libyen"
                         },
                         new
@@ -1054,7 +1054,7 @@ namespace flag_it_backend.Migrations
                             Id = 101,
                             Continent = "Europa",
                             Description = "Liechtenstein, ett litet alpland mellan Schweiz och Österrike, blev en suverän stat 1719. Landet har cirka 39 000 invånare. Det officiella språket är tyska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/li.svg",
                             Name = "Liechtenstein"
                         },
                         new
@@ -1062,7 +1062,7 @@ namespace flag_it_backend.Migrations
                             Id = 102,
                             Continent = "Europa",
                             Description = "Litauen, beläget i norra Europa vid Östersjön, blev självständigt från Sovjetunionen den 11 mars 1990. Landet har cirka 2,8 miljoner invånare. Det officiella språket är litauiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/lt.svg",
                             Name = "Litauen"
                         },
                         new
@@ -1070,7 +1070,7 @@ namespace flag_it_backend.Migrations
                             Id = 103,
                             Continent = "Europa",
                             Description = "Luxemburg, ett litet land i Västeuropa, är ett av världens rikaste länder. Landet har cirka 630 000 invånare. De officiella språken är luxemburgiska, franska och tyska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/lu.svg",
                             Name = "Luxemburg"
                         },
                         new
@@ -1078,7 +1078,7 @@ namespace flag_it_backend.Migrations
                             Id = 104,
                             Continent = "Afrika",
                             Description = "Madagaskar, en stor ö utanför Afrikas sydöstra kust, blev självständigt från Frankrike den 26 juni 1960. Landet har cirka 26 miljoner invånare. De officiella språken är malagassiska och franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mg.svg",
                             Name = "Madagaskar"
                         },
                         new
@@ -1086,7 +1086,7 @@ namespace flag_it_backend.Migrations
                             Id = 105,
                             Continent = "Afrika",
                             Description = "Malawi, beläget i sydöstra Afrika, blev självständigt från Storbritannien den 6 juli 1964. Landet har cirka 19 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mw.svg",
                             Name = "Malawi"
                         },
                         new
@@ -1094,7 +1094,7 @@ namespace flag_it_backend.Migrations
                             Id = 106,
                             Continent = "Asien",
                             Description = "Malaysia, beläget i Sydostasien, blev självständigt från Storbritannien den 31 augusti 1957. Landet har cirka 32 miljoner invånare. Det officiella språket är malajiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/my.svg",
                             Name = "Malaysia"
                         },
                         new
@@ -1102,7 +1102,7 @@ namespace flag_it_backend.Migrations
                             Id = 107,
                             Continent = "Asien",
                             Description = "Maldiverna, en ö-nation i Indiska oceanen, blev självständigt från Storbritannien den 26 juli 1965. Landet har cirka 540 000 invånare. Det officiella språket är dhivehi.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mv.svg",
                             Name = "Maldiverna"
                         },
                         new
@@ -1110,7 +1110,7 @@ namespace flag_it_backend.Migrations
                             Id = 108,
                             Continent = "Afrika",
                             Description = "Mali, beläget i Västafrika, blev självständigt från Frankrike den 22 september 1960. Landet har cirka 20 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ml.svg",
                             Name = "Mali"
                         },
                         new
@@ -1118,7 +1118,7 @@ namespace flag_it_backend.Migrations
                             Id = 109,
                             Continent = "Europa",
                             Description = "Malta, en ö-nation i Medelhavet, blev självständigt från Storbritannien den 21 september 1964. Landet har cirka 514 000 invånare. De officiella språken är maltesiska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mt.svg",
                             Name = "Malta"
                         },
                         new
@@ -1126,7 +1126,7 @@ namespace flag_it_backend.Migrations
                             Id = 110,
                             Continent = "Oceanien",
                             Description = "Marshallöarna, en ö-nation i Stilla havet, blev självständigt från USA den 21 oktober 1986. Landet har cirka 59 000 invånare. De officiella språken är engelska och marshallesiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mh.svg",
                             Name = "Marshallöarna"
                         },
                         new
@@ -1134,7 +1134,7 @@ namespace flag_it_backend.Migrations
                             Id = 111,
                             Continent = "Afrika",
                             Description = "Mauretanien, beläget i Västafrika, blev självständigt från Frankrike den 28 november 1960. Landet har cirka 4,5 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mr.svg",
                             Name = "Mauretanien"
                         },
                         new
@@ -1142,7 +1142,7 @@ namespace flag_it_backend.Migrations
                             Id = 112,
                             Continent = "Afrika",
                             Description = "Mauritius, en ö-nation i Indiska oceanen, blev självständigt från Storbritannien den 12 mars 1968. Landet har cirka 1,3 miljoner invånare. De officiella språken är engelska och franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mu.svg",
                             Name = "Mauritius"
                         },
                         new
@@ -1150,7 +1150,7 @@ namespace flag_it_backend.Migrations
                             Id = 113,
                             Continent = "Nordamerika",
                             Description = "Mexiko, beläget i Nordamerika, blev självständigt från Spanien den 16 september 1810. Landet har cirka 128 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mx.svg",
                             Name = "Mexiko"
                         },
                         new
@@ -1158,7 +1158,7 @@ namespace flag_it_backend.Migrations
                             Id = 114,
                             Continent = "Oceanien",
                             Description = "Mikronesien, en ö-nation i Stilla havet, blev självständigt från USA den 3 november 1986. Landet har cirka 104 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/fm.svg",
                             Name = "Mikronesien"
                         },
                         new
@@ -1166,7 +1166,7 @@ namespace flag_it_backend.Migrations
                             Id = 115,
                             Continent = "Europa",
                             Description = "Moldavien, beläget i Östeuropa, blev självständigt från Sovjetunionen den 27 augusti 1991. Landet har cirka 2,6 miljoner invånare. Det officiella språket är rumänska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/md.svg",
                             Name = "Moldavien"
                         },
                         new
@@ -1174,7 +1174,7 @@ namespace flag_it_backend.Migrations
                             Id = 116,
                             Continent = "Europa",
                             Description = "Monaco, en liten stadsstat på franska rivieran, är världens näst minsta land. Landet har cirka 39 000 invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mc.svg",
                             Name = "Monaco"
                         },
                         new
@@ -1182,7 +1182,7 @@ namespace flag_it_backend.Migrations
                             Id = 117,
                             Continent = "Asien",
                             Description = "Mongoliet, beläget i Östasien, blev självständigt från Kina den 11 juli 1921. Landet har cirka 3,2 miljoner invånare. Det officiella språket är mongoliska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mn.svg",
                             Name = "Mongoliet"
                         },
                         new
@@ -1190,7 +1190,7 @@ namespace flag_it_backend.Migrations
                             Id = 118,
                             Continent = "Europa",
                             Description = "Montenegro, beläget på Balkanhalvön, blev självständigt från Serbien och Montenegro den 3 juni 2006. Landet har cirka 620 000 invånare. Det officiella språket är montenegrinska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/me.svg",
                             Name = "Montenegro"
                         },
                         new
@@ -1198,7 +1198,7 @@ namespace flag_it_backend.Migrations
                             Id = 119,
                             Continent = "Afrika",
                             Description = "Marocko, beläget i Nordafrika vid Atlanten och Medelhavet, blev självständigt från Frankrike den 2 mars 1956. Landet har cirka 36 miljoner invånare. De officiella språken är arabiska och berbiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ma.svg",
                             Name = "Marocko"
                         },
                         new
@@ -1206,7 +1206,7 @@ namespace flag_it_backend.Migrations
                             Id = 120,
                             Continent = "Afrika",
                             Description = "Moçambique, beläget i sydöstra Afrika, blev självständigt från Portugal den 25 juni 1975. Landet har cirka 30 miljoner invånare. Det officiella språket är portugisiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mz.svg",
                             Name = "Moçambique"
                         },
                         new
@@ -1214,7 +1214,7 @@ namespace flag_it_backend.Migrations
                             Id = 121,
                             Continent = "Asien",
                             Description = "Myanmar, tidigare känt som Burma, beläget i Sydostasien, blev självständigt från Storbritannien den 4 januari 1948. Landet har cirka 54 miljoner invånare. Det officiella språket är burmesiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mm.svg",
                             Name = "Myanmar"
                         },
                         new
@@ -1222,7 +1222,7 @@ namespace flag_it_backend.Migrations
                             Id = 122,
                             Continent = "Afrika",
                             Description = "Namibia, beläget i sydvästra Afrika, blev självständigt från Sydafrika den 21 mars 1990. Landet har cirka 2,5 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/na.svg",
                             Name = "Namibia"
                         },
                         new
@@ -1230,7 +1230,7 @@ namespace flag_it_backend.Migrations
                             Id = 123,
                             Continent = "Oceanien",
                             Description = "Nauru, en liten ö-nation i Stilla havet, blev självständigt från Australien, Nya Zeeland och Storbritannien den 31 januari 1968. Landet har cirka 10 000 invånare. Det officiella språket är nauruanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/nr.svg",
                             Name = "Nauru"
                         },
                         new
@@ -1238,7 +1238,7 @@ namespace flag_it_backend.Migrations
                             Id = 124,
                             Continent = "Asien",
                             Description = "Nepal, beläget i Himalaya, är en av världens äldsta suveräna stater. Landet har cirka 29 miljoner invånare. Det officiella språket är nepalesiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/np.svg",
                             Name = "Nepal"
                         },
                         new
@@ -1246,7 +1246,7 @@ namespace flag_it_backend.Migrations
                             Id = 125,
                             Continent = "Europa",
                             Description = "Nederländerna, beläget i Västeuropa, har en lång historia som självständig nation. Landet har cirka 17 miljoner invånare. Det officiella språket är nederländska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/nl.svg",
                             Name = "Nederländerna"
                         },
                         new
@@ -1254,7 +1254,7 @@ namespace flag_it_backend.Migrations
                             Id = 126,
                             Continent = "Oceanien",
                             Description = "Nya Zeeland, en ö-nation i sydvästra Stilla havet, blev självständigt från Storbritannien den 26 september 1907. Landet har cirka 5 miljoner invånare. De officiella språken är engelska och maori.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/nz.svg",
                             Name = "Nya Zeeland"
                         },
                         new
@@ -1262,7 +1262,7 @@ namespace flag_it_backend.Migrations
                             Id = 127,
                             Continent = "Nordamerika",
                             Description = "Nicaragua, beläget i Centralamerika, blev självständigt från Spanien den 15 september 1821. Landet har cirka 6,6 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ni.svg",
                             Name = "Nicaragua"
                         },
                         new
@@ -1270,7 +1270,7 @@ namespace flag_it_backend.Migrations
                             Id = 128,
                             Continent = "Afrika",
                             Description = "Niger, beläget i Västafrika, blev självständigt från Frankrike den 3 augusti 1960. Landet har cirka 24 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ne.svg",
                             Name = "Niger"
                         },
                         new
@@ -1278,7 +1278,7 @@ namespace flag_it_backend.Migrations
                             Id = 129,
                             Continent = "Afrika",
                             Description = "Nigeria, beläget i Västafrika, blev självständigt från Storbritannien den 1 oktober 1960. Landet har cirka 206 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ng.svg",
                             Name = "Nigeria"
                         },
                         new
@@ -1286,7 +1286,7 @@ namespace flag_it_backend.Migrations
                             Id = 130,
                             Continent = "Europa",
                             Description = "Nordmakedonien, beläget på Balkanhalvön, blev självständigt från Jugoslavien den 8 september 1991. Landet har cirka 2,1 miljoner invånare. Det officiella språket är makedonska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/mk.svg",
                             Name = "Nordmakedonien"
                         },
                         new
@@ -1294,7 +1294,7 @@ namespace flag_it_backend.Migrations
                             Id = 131,
                             Continent = "Europa",
                             Description = "Norge, beläget i norra Europa på Skandinaviska halvön, blev självständigt från Sverige den 7 juni 1905. Landet har cirka 5,4 miljoner invånare. Det officiella språket är norska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/no.svg",
                             Name = "Norge"
                         },
                         new
@@ -1302,7 +1302,7 @@ namespace flag_it_backend.Migrations
                             Id = 132,
                             Continent = "Asien",
                             Description = "Oman, beläget på Arabiska halvön, blev en självständig stat efter att ha avskaffat det portugisiska styret 1651. Landet har cirka 5 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/om.svg",
                             Name = "Oman"
                         },
                         new
@@ -1310,7 +1310,7 @@ namespace flag_it_backend.Migrations
                             Id = 133,
                             Continent = "Asien",
                             Description = "Pakistan, beläget i Sydasien, bildades som en självständig stat från Indien den 14 augusti 1947. Landet har cirka 220 miljoner invånare. Det officiella språket är urdu.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/pk.svg",
                             Name = "Pakistan"
                         },
                         new
@@ -1318,7 +1318,7 @@ namespace flag_it_backend.Migrations
                             Id = 134,
                             Continent = "Oceanien",
                             Description = "Palau, en ö-nation i Stilla havet, blev självständigt från USA den 1 oktober 1994. Landet har cirka 18 000 invånare. De officiella språken är palauanska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/pw.svg",
                             Name = "Palau"
                         },
                         new
@@ -1326,7 +1326,7 @@ namespace flag_it_backend.Migrations
                             Id = 135,
                             Continent = "Asien",
                             Description = "Palestina, beläget i Mellanöstern, består av Västbanken och Gaza. Befolkningen uppgår till cirka 5 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ps.svg",
                             Name = "Palestina"
                         },
                         new
@@ -1334,7 +1334,7 @@ namespace flag_it_backend.Migrations
                             Id = 136,
                             Continent = "Nordamerika",
                             Description = "Panama, beläget i Centralamerika, blev självständigt från Colombia den 3 november 1903. Landet har cirka 4,2 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/pa.svg",
                             Name = "Panama"
                         },
                         new
@@ -1342,7 +1342,7 @@ namespace flag_it_backend.Migrations
                             Id = 137,
                             Continent = "Oceanien",
                             Description = "Papua Nya Guinea, beläget i sydvästra Stilla havet, blev självständigt från Australien den 16 september 1975. Landet har cirka 8,9 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/pg.svg",
                             Name = "Papua Nya Guinea"
                         },
                         new
@@ -1350,7 +1350,7 @@ namespace flag_it_backend.Migrations
                             Id = 138,
                             Continent = "Sydamerika",
                             Description = "Paraguay, beläget i Sydamerika, blev självständigt från Spanien den 14 maj 1811. Landet har cirka 7 miljoner invånare. De officiella språken är spanska och guarani.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/py.svg",
                             Name = "Paraguay"
                         },
                         new
@@ -1358,7 +1358,7 @@ namespace flag_it_backend.Migrations
                             Id = 139,
                             Continent = "Sydamerika",
                             Description = "Peru, beläget i västra Sydamerika, blev självständigt från Spanien den 28 juli 1821. Landet har cirka 33 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/pe.svg",
                             Name = "Peru"
                         },
                         new
@@ -1366,7 +1366,7 @@ namespace flag_it_backend.Migrations
                             Id = 140,
                             Continent = "Asien",
                             Description = "Filippinerna, en ö-nation i Sydostasien, blev självständigt från USA den 4 juli 1946. Landet har cirka 109 miljoner invånare. Det officiella språket är filippinska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ph.svg",
                             Name = "Filippinerna"
                         },
                         new
@@ -1374,7 +1374,7 @@ namespace flag_it_backend.Migrations
                             Id = 141,
                             Continent = "Europa",
                             Description = "Polen, beläget i Centraleuropa, återfick sin självständighet den 11 november 1918 efter att ha varit uppdelat mellan olika imperier i över ett sekel. Landet har cirka 38 miljoner invånare. Det officiella språket är polska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/pl.svg",
                             Name = "Polen"
                         },
                         new
@@ -1382,7 +1382,7 @@ namespace flag_it_backend.Migrations
                             Id = 142,
                             Continent = "Europa",
                             Description = "Portugal, beläget på den iberiska halvön i södra Europa, är en av världens äldsta nationer. Landet har cirka 10 miljoner invånare. Det officiella språket är portugisiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/pt.svg",
                             Name = "Portugal"
                         },
                         new
@@ -1390,7 +1390,7 @@ namespace flag_it_backend.Migrations
                             Id = 143,
                             Continent = "Asien",
                             Description = "Qatar, beläget på Arabiska halvön vid Persiska viken, blev självständigt från Storbritannien den 3 september 1971. Landet har cirka 2,8 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/qa.svg",
                             Name = "Qatar"
                         },
                         new
@@ -1398,7 +1398,7 @@ namespace flag_it_backend.Migrations
                             Id = 144,
                             Continent = "Europa",
                             Description = "Rumänien, beläget i sydöstra Europa, blev självständigt från Osmanska riket den 9 maj 1877. Landet har cirka 19 miljoner invånare. Det officiella språket är rumänska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ro.svg",
                             Name = "Rumänien"
                         },
                         new
@@ -1406,7 +1406,7 @@ namespace flag_it_backend.Migrations
                             Id = 145,
                             Continent = "Europa",
                             Description = "Ryssland, världens största land till ytan, blev självständigt från Sovjetunionen den 25 december 1991. Landet har cirka 146 miljoner invånare. Det officiella språket är ryska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ru.svg",
                             Name = "Ryssland"
                         },
                         new
@@ -1414,7 +1414,7 @@ namespace flag_it_backend.Migrations
                             Id = 146,
                             Continent = "Afrika",
                             Description = "Rwanda, beläget i Centralafrika, blev självständigt från Belgien den 1 juli 1962. Landet har cirka 12 miljoner invånare. De officiella språken är kinyarwanda, franska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/rw.svg",
                             Name = "Rwanda"
                         },
                         new
@@ -1422,7 +1422,7 @@ namespace flag_it_backend.Migrations
                             Id = 147,
                             Continent = "Nordamerika",
                             Description = "Saint Kitts och Nevis, en ö-nation i Karibien, blev självständigt från Storbritannien den 19 september 1983. Landet har cirka 53 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/kn.svg",
                             Name = "Saint Kitts och Nevis"
                         },
                         new
@@ -1430,7 +1430,7 @@ namespace flag_it_backend.Migrations
                             Id = 148,
                             Continent = "Nordamerika",
                             Description = "Saint Lucia, en ö-nation i Karibien, blev självständigt från Storbritannien den 22 februari 1979. Landet har cirka 180 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/lc.svg",
                             Name = "Saint Lucia"
                         },
                         new
@@ -1438,7 +1438,7 @@ namespace flag_it_backend.Migrations
                             Id = 149,
                             Continent = "Nordamerika",
                             Description = "Saint Vincent och Grenadinerna, en ö-nation i Karibien, blev självständigt från Storbritannien den 27 oktober 1979. Landet har cirka 110 000 invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/vc.svg",
                             Name = "Saint Vincent och Grenadinerna"
                         },
                         new
@@ -1446,7 +1446,7 @@ namespace flag_it_backend.Migrations
                             Id = 150,
                             Continent = "Oceanien",
                             Description = "Samoa, en ö-nation i Stilla havet, blev självständigt från Nya Zeeland den 1 januari 1962. Landet har cirka 200 000 invånare. Det officiella språket är samoanska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ws.svg",
                             Name = "Samoa"
                         },
                         new
@@ -1454,7 +1454,7 @@ namespace flag_it_backend.Migrations
                             Id = 151,
                             Continent = "Europa",
                             Description = "San Marino, en mikrostatsrepublik belägen i norra Italien, anses vara världens äldsta republik. Landet har cirka 34 000 invånare. Det officiella språket är italienska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sm.svg",
                             Name = "San Marino"
                         },
                         new
@@ -1462,7 +1462,7 @@ namespace flag_it_backend.Migrations
                             Id = 152,
                             Continent = "Afrika",
                             Description = "Sao Tomé och Principe, en ö-nation i Guineabukten, blev självständigt från Portugal den 12 juli 1975. Landet har cirka 200 000 invånare. Det officiella språket är portugisiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/st.svg",
                             Name = "Sao Tomé och Principe"
                         },
                         new
@@ -1470,7 +1470,7 @@ namespace flag_it_backend.Migrations
                             Id = 153,
                             Continent = "Asien",
                             Description = "Saudiarabien, beläget på Arabiska halvön, grundades som ett enat kungarike den 23 september 1932. Landet har cirka 34 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sa.svg",
                             Name = "Saudiarabien"
                         },
                         new
@@ -1478,7 +1478,7 @@ namespace flag_it_backend.Migrations
                             Id = 154,
                             Continent = "Afrika",
                             Description = "Senegal, beläget i Västafrika, blev självständigt från Frankrike den 20 augusti 1960. Landet har cirka 16 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sn.svg",
                             Name = "Senegal"
                         },
                         new
@@ -1486,7 +1486,7 @@ namespace flag_it_backend.Migrations
                             Id = 155,
                             Continent = "Europa",
                             Description = "Serbien, beläget på Balkanhalvön, blev självständigt från unionen med Montenegro den 5 juni 2006. Landet har cirka 7 miljoner invånare. Det officiella språket är serbiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/rs.svg",
                             Name = "Serbien"
                         },
                         new
@@ -1494,7 +1494,7 @@ namespace flag_it_backend.Migrations
                             Id = 156,
                             Continent = "Afrika",
                             Description = "Seychellerna, en ö-nation i Indiska oceanen, blev självständigt från Storbritannien den 29 juni 1976. Landet har cirka 98 000 invånare. De officiella språken är kreol, engelska och franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sc.svg",
                             Name = "Seychellerna"
                         },
                         new
@@ -1502,7 +1502,7 @@ namespace flag_it_backend.Migrations
                             Id = 157,
                             Continent = "Afrika",
                             Description = "Sierra Leone, beläget i Västafrika, blev självständigt från Storbritannien den 27 april 1961. Landet har cirka 7,5 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sl.svg",
                             Name = "Sierra Leone"
                         },
                         new
@@ -1510,7 +1510,7 @@ namespace flag_it_backend.Migrations
                             Id = 158,
                             Continent = "Asien",
                             Description = "Singapore, en stadstat i Sydostasien, blev självständigt från Malaysia den 9 augusti 1965. Landet har cirka 5,7 miljoner invånare. De officiella språken är engelska, mandarin, malajiska och tamil.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sg.svg",
                             Name = "Singapore"
                         },
                         new
@@ -1518,7 +1518,7 @@ namespace flag_it_backend.Migrations
                             Id = 159,
                             Continent = "Europa",
                             Description = "Slovakien, beläget i Centraleuropa, blev självständigt från Tjeckoslovakien den 1 januari 1993. Landet har cirka 5,4 miljoner invånare. Det officiella språket är slovakiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sk.svg",
                             Name = "Slovakien"
                         },
                         new
@@ -1526,7 +1526,7 @@ namespace flag_it_backend.Migrations
                             Id = 160,
                             Continent = "Europa",
                             Description = "Slovenien, beläget i Centraleuropa, blev självständigt från Jugoslavien den 25 juni 1991. Landet har cirka 2,1 miljoner invånare. Det officiella språket är slovenska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/si.svg",
                             Name = "Slovenien"
                         },
                         new
@@ -1534,7 +1534,7 @@ namespace flag_it_backend.Migrations
                             Id = 161,
                             Continent = "Oceanien",
                             Description = "Salomonöarna, en ö-nation i Stilla havet, blev självständigt från Storbritannien den 7 juli 1978. Landet har cirka 652 000 invånare. De officiella språken är engelska och pijin.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sb.svg",
                             Name = "Salomonöarna"
                         },
                         new
@@ -1542,7 +1542,7 @@ namespace flag_it_backend.Migrations
                             Id = 162,
                             Continent = "Afrika",
                             Description = "Somalia, beläget i Afrikas horn, blev självständigt från Storbritannien och Italien den 1 juli 1960. Landet har cirka 15 miljoner invånare. Det officiella språket är somaliska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/so.svg",
                             Name = "Somalia"
                         },
                         new
@@ -1550,7 +1550,7 @@ namespace flag_it_backend.Migrations
                             Id = 163,
                             Continent = "Afrika",
                             Description = "Sydafrika, beläget på Afrikas sydspets, blev självständigt från Storbritannien den 31 maj 1910. Landet har cirka 58 miljoner invånare. Det finns 11 officiella språk, inklusive afrikaans och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/za.svg",
                             Name = "Sydafrika"
                         },
                         new
@@ -1558,7 +1558,7 @@ namespace flag_it_backend.Migrations
                             Id = 164,
                             Continent = "Afrika",
                             Description = "Sydsudan, världens yngsta nation, blev självständigt från Sudan den 9 juli 2011. Landet har cirka 11 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ss.svg",
                             Name = "Sydsudan"
                         },
                         new
@@ -1566,7 +1566,7 @@ namespace flag_it_backend.Migrations
                             Id = 165,
                             Continent = "Europa",
                             Description = "Spanien, beläget på den iberiska halvön i södra Europa, är känt för sin rika kultur och historia. Landet har cirka 47 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/es.svg",
                             Name = "Spanien"
                         },
                         new
@@ -1574,7 +1574,7 @@ namespace flag_it_backend.Migrations
                             Id = 166,
                             Continent = "Asien",
                             Description = "Sri Lanka, en ö-nation i Indiska oceanen, blev självständigt från Storbritannien den 4 februari 1948. Landet har cirka 21 miljoner invånare. De officiella språken är singalesiska och tamil.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/lk.svg",
                             Name = "Sri Lanka"
                         },
                         new
@@ -1582,7 +1582,7 @@ namespace flag_it_backend.Migrations
                             Id = 167,
                             Continent = "Afrika",
                             Description = "Sudan, beläget i Nordafrika, blev självständigt från Egypten och Storbritannien den 1 januari 1956. Landet har cirka 42 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sd.svg",
                             Name = "Sudan"
                         },
                         new
@@ -1590,7 +1590,7 @@ namespace flag_it_backend.Migrations
                             Id = 168,
                             Continent = "Sydamerika",
                             Description = "Surinam, beläget i norra Sydamerika, blev självständigt från Nederländerna den 25 november 1975. Landet har cirka 586 000 invånare. Det officiella språket är nederländska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sr.svg",
                             Name = "Surinam"
                         },
                         new
@@ -1598,7 +1598,7 @@ namespace flag_it_backend.Migrations
                             Id = 169,
                             Continent = "Europa",
                             Description = "Sverige, beläget i norra Europa på Skandinaviska halvön, har en lång historia som självständig nation. Landet har cirka 10,3 miljoner invånare. Det officiella språket är svenska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/se.svg",
                             Name = "Sverige"
                         },
                         new
@@ -1606,7 +1606,7 @@ namespace flag_it_backend.Migrations
                             Id = 170,
                             Continent = "Europa",
                             Description = "Schweiz, beläget i Centraleuropa, är känt för sin neutralitet och stabilitet. Landet har cirka 8,5 miljoner invånare. De officiella språken är tyska, franska, italienska och rätoromanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ch.svg",
                             Name = "Schweiz"
                         },
                         new
@@ -1614,7 +1614,7 @@ namespace flag_it_backend.Migrations
                             Id = 171,
                             Continent = "Asien",
                             Description = "Syrien, beläget i Mellanöstern, blev självständigt från Frankrike den 17 april 1946. Landet har cirka 17 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/sy.svg",
                             Name = "Syrien"
                         },
                         new
@@ -1622,7 +1622,7 @@ namespace flag_it_backend.Migrations
                             Id = 172,
                             Continent = "Asien",
                             Description = "Tadzjikistan, beläget i Centralasien, blev självständigt från Sovjetunionen den 9 september 1991. Landet har cirka 9,5 miljoner invånare. Det officiella språket är tadzjikiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tj.svg",
                             Name = "Tadzjikistan"
                         },
                         new
@@ -1630,7 +1630,7 @@ namespace flag_it_backend.Migrations
                             Id = 173,
                             Continent = "Afrika",
                             Description = "Tanzania, beläget i Östafrika, bildades genom sammanslagningen av Tanganyika och Zanzibar den 26 april 1964. Landet har cirka 58 miljoner invånare. De officiella språken är swahili och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tz.svg",
                             Name = "Tanzania"
                         },
                         new
@@ -1638,7 +1638,7 @@ namespace flag_it_backend.Migrations
                             Id = 174,
                             Continent = "Asien",
                             Description = "Thailand, beläget i Sydostasien, är känt för sin rika kultur och historia. Landet har cirka 70 miljoner invånare. Det officiella språket är thailändska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/th.svg",
                             Name = "Thailand"
                         },
                         new
@@ -1646,7 +1646,7 @@ namespace flag_it_backend.Migrations
                             Id = 175,
                             Continent = "Afrika",
                             Description = "Togo, beläget i Västafrika, blev självständigt från Frankrike den 27 april 1960. Landet har cirka 8 miljoner invånare. Det officiella språket är franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tg.svg",
                             Name = "Togo"
                         },
                         new
@@ -1654,7 +1654,7 @@ namespace flag_it_backend.Migrations
                             Id = 176,
                             Continent = "Oceanien",
                             Description = "Tonga, en ö-nation i Stilla havet, blev aldrig koloniserat men blev en konstitutionell monarki 1875. Landet har cirka 104 000 invånare. Det officiella språket är tonganska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/to.svg",
                             Name = "Tonga"
                         },
                         new
@@ -1662,7 +1662,7 @@ namespace flag_it_backend.Migrations
                             Id = 177,
                             Continent = "Nordamerika",
                             Description = "Trinidad och Tobago, en ö-nation i Karibien, blev självständigt från Storbritannien den 31 augusti 1962. Landet har cirka 1,4 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tt.svg",
                             Name = "Trinidad och Tobago"
                         },
                         new
@@ -1670,7 +1670,7 @@ namespace flag_it_backend.Migrations
                             Id = 178,
                             Continent = "Afrika",
                             Description = "Tunisien, beläget i Nordafrika vid Medelhavet, blev självständigt från Frankrike den 20 mars 1956. Landet har cirka 12 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tn.svg",
                             Name = "Tunisien"
                         },
                         new
@@ -1678,7 +1678,7 @@ namespace flag_it_backend.Migrations
                             Id = 179,
                             Continent = "Asien",
                             Description = "Turkiet, beläget på gränsen mellan Europa och Asien, blev en republik den 29 oktober 1923 efter det osmanska rikets fall. Landet har cirka 82 miljoner invånare. Det officiella språket är turkiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tr.svg",
                             Name = "Turkiet"
                         },
                         new
@@ -1686,7 +1686,7 @@ namespace flag_it_backend.Migrations
                             Id = 180,
                             Continent = "Asien",
                             Description = "Turkmenistan, beläget i Centralasien, blev självständigt från Sovjetunionen den 27 oktober 1991. Landet har cirka 6 miljoner invånare. Det officiella språket är turkmeniska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tm.svg",
                             Name = "Turkmenistan"
                         },
                         new
@@ -1694,7 +1694,7 @@ namespace flag_it_backend.Migrations
                             Id = 181,
                             Continent = "Oceanien",
                             Description = "Tuvalu, en ö-nation i Stilla havet, blev självständigt från Storbritannien den 1 oktober 1978. Landet har cirka 11 000 invånare. De officiella språken är tuvaluanska och engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/tv.svg",
                             Name = "Tuvalu"
                         },
                         new
@@ -1702,7 +1702,7 @@ namespace flag_it_backend.Migrations
                             Id = 182,
                             Continent = "Afrika",
                             Description = "Uganda, beläget i Östafrika, blev självständigt från Storbritannien den 9 oktober 1962. Landet har cirka 45 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ug.svg",
                             Name = "Uganda"
                         },
                         new
@@ -1710,7 +1710,7 @@ namespace flag_it_backend.Migrations
                             Id = 183,
                             Continent = "Europa",
                             Description = "Ukraina, beläget i Östeuropa, blev självständigt från Sovjetunionen den 24 augusti 1991. Landet har cirka 41 miljoner invånare. Det officiella språket är ukrainska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ua.svg",
                             Name = "Ukraina"
                         },
                         new
@@ -1718,7 +1718,7 @@ namespace flag_it_backend.Migrations
                             Id = 184,
                             Continent = "Asien",
                             Description = "Förenade Arabemiraten, beläget i Mellanöstern, blev självständigt från Storbritannien den 2 december 1971. Landet har cirka 9,9 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ae.svg",
                             Name = "Förenade Arabemiraten"
                         },
                         new
@@ -1726,7 +1726,7 @@ namespace flag_it_backend.Migrations
                             Id = 185,
                             Continent = "Europa",
                             Description = "Storbritannien, beläget i nordvästra Europa, är en av världens äldsta konstitutionella monarkier. Landet har cirka 67 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/gb.svg",
                             Name = "Storbritannien"
                         },
                         new
@@ -1734,7 +1734,7 @@ namespace flag_it_backend.Migrations
                             Id = 186,
                             Continent = "Nordamerika",
                             Description = "USA, beläget i Nordamerika, blev självständigt från Storbritannien den 4 juli 1776. Landet har cirka 331 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/us.svg",
                             Name = "USA"
                         },
                         new
@@ -1742,7 +1742,7 @@ namespace flag_it_backend.Migrations
                             Id = 187,
                             Continent = "Sydamerika",
                             Description = "Uruguay, beläget i Sydamerika, blev självständigt från Brasilien den 25 augusti 1825. Landet har cirka 3,5 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/uy.svg",
                             Name = "Uruguay"
                         },
                         new
@@ -1750,7 +1750,7 @@ namespace flag_it_backend.Migrations
                             Id = 188,
                             Continent = "Asien",
                             Description = "Uzbekistan, beläget i Centralasien, blev självständigt från Sovjetunionen den 1 september 1991. Landet har cirka 33 miljoner invånare. Det officiella språket är uzbekiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/uz.svg",
                             Name = "Uzbekistan"
                         },
                         new
@@ -1758,7 +1758,7 @@ namespace flag_it_backend.Migrations
                             Id = 189,
                             Continent = "Oceanien",
                             Description = "Vanuatu, en ö-nation i Stilla havet, blev självständigt från Frankrike och Storbritannien den 30 juli 1980. Landet har cirka 307 000 invånare. De officiella språken är bislama, engelska och franska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/vu.svg",
                             Name = "Vanuatu"
                         },
                         new
@@ -1766,7 +1766,7 @@ namespace flag_it_backend.Migrations
                             Id = 190,
                             Continent = "Europa",
                             Description = "Vatikanstaten, en mikrostatsstat i Rom, är världens minsta suveräna stat. Landet har cirka 800 invånare. Det officiella språket är latin.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/va.svg",
                             Name = "Vatikanstaten"
                         },
                         new
@@ -1774,7 +1774,7 @@ namespace flag_it_backend.Migrations
                             Id = 191,
                             Continent = "Sydamerika",
                             Description = "Venezuela, beläget i norra Sydamerika, blev självständigt från Spanien den 5 juli 1811. Landet har cirka 28 miljoner invånare. Det officiella språket är spanska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ve.svg",
                             Name = "Venezuela"
                         },
                         new
@@ -1782,7 +1782,7 @@ namespace flag_it_backend.Migrations
                             Id = 192,
                             Continent = "Asien",
                             Description = "Vietnam, beläget i Sydostasien, blev självständigt från Frankrike den 2 september 1945. Landet har cirka 97 miljoner invånare. Det officiella språket är vietnamesiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/vn.svg",
                             Name = "Vietnam"
                         },
                         new
@@ -1790,7 +1790,7 @@ namespace flag_it_backend.Migrations
                             Id = 193,
                             Continent = "Asien",
                             Description = "Jemen, beläget på Arabiska halvön, blev en enad republik den 22 maj 1990. Landet har cirka 29 miljoner invånare. Det officiella språket är arabiska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/ye.svg",
                             Name = "Jemen"
                         },
                         new
@@ -1798,7 +1798,7 @@ namespace flag_it_backend.Migrations
                             Id = 194,
                             Continent = "Afrika",
                             Description = "Zambia, beläget i södra Afrika, blev självständigt från Storbritannien den 24 oktober 1964. Landet har cirka 18 miljoner invånare. Det officiella språket är engelska.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/zm.svg",
                             Name = "Zambia"
                         },
                         new
@@ -1806,7 +1806,7 @@ namespace flag_it_backend.Migrations
                             Id = 195,
                             Continent = "Afrika",
                             Description = "Zimbabwe, beläget i södra Afrika, blev självständigt från Storbritannien den 18 april 1980. Landet har cirka 14 miljoner invånare. De officiella språken är engelska, shona och ndebele.",
-                            FlagImage = "path/to/flag/image",
+                            FlagImage = "https://flagcdn.com/zw.svg",
                             Name = "Zimbabwe"
                         });
                 });
@@ -1832,6 +1832,1178 @@ namespace flag_it_backend.Migrations
                         .IsUnique();
 
                     b.ToTable("Questions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CountryId = 1,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CountryId = 2,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CountryId = 3,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CountryId = 4,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CountryId = 5,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CountryId = 6,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CountryId = 7,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CountryId = 8,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CountryId = 9,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CountryId = 10,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CountryId = 11,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CountryId = 12,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CountryId = 13,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CountryId = 14,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CountryId = 15,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CountryId = 16,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CountryId = 17,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CountryId = 18,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CountryId = 19,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CountryId = 20,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CountryId = 21,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CountryId = 22,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CountryId = 23,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CountryId = 24,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CountryId = 25,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CountryId = 26,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CountryId = 27,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CountryId = 28,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CountryId = 29,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CountryId = 30,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CountryId = 31,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            CountryId = 32,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            CountryId = 33,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            CountryId = 34,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            CountryId = 35,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            CountryId = 36,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            CountryId = 37,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            CountryId = 38,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            CountryId = 39,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            CountryId = 40,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            CountryId = 41,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            CountryId = 42,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            CountryId = 43,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            CountryId = 44,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            CountryId = 45,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            CountryId = 46,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            CountryId = 47,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            CountryId = 48,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            CountryId = 49,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            CountryId = 50,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            CountryId = 51,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            CountryId = 52,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            CountryId = 53,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            CountryId = 54,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            CountryId = 55,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            CountryId = 56,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            CountryId = 57,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            CountryId = 58,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            CountryId = 59,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            CountryId = 60,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            CountryId = 61,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            CountryId = 62,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            CountryId = 63,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            CountryId = 64,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            CountryId = 65,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            CountryId = 66,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            CountryId = 67,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            CountryId = 68,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            CountryId = 69,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            CountryId = 70,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            CountryId = 71,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            CountryId = 72,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            CountryId = 73,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            CountryId = 74,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            CountryId = 75,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 76,
+                            CountryId = 76,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            CountryId = 77,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            CountryId = 78,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 79,
+                            CountryId = 79,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 80,
+                            CountryId = 80,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 81,
+                            CountryId = 81,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 82,
+                            CountryId = 82,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 83,
+                            CountryId = 83,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 84,
+                            CountryId = 84,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 85,
+                            CountryId = 85,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 86,
+                            CountryId = 86,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 87,
+                            CountryId = 87,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 88,
+                            CountryId = 88,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 89,
+                            CountryId = 89,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 90,
+                            CountryId = 90,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 91,
+                            CountryId = 91,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 92,
+                            CountryId = 92,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 93,
+                            CountryId = 93,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 94,
+                            CountryId = 94,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 95,
+                            CountryId = 95,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 96,
+                            CountryId = 96,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 97,
+                            CountryId = 97,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 98,
+                            CountryId = 98,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 99,
+                            CountryId = 99,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 100,
+                            CountryId = 100,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 101,
+                            CountryId = 101,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 102,
+                            CountryId = 102,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 103,
+                            CountryId = 103,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 104,
+                            CountryId = 104,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 105,
+                            CountryId = 105,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 106,
+                            CountryId = 106,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 107,
+                            CountryId = 107,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 108,
+                            CountryId = 108,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 109,
+                            CountryId = 109,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 110,
+                            CountryId = 110,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 111,
+                            CountryId = 111,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 112,
+                            CountryId = 112,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 113,
+                            CountryId = 113,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 114,
+                            CountryId = 114,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 115,
+                            CountryId = 115,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 116,
+                            CountryId = 116,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 117,
+                            CountryId = 117,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 118,
+                            CountryId = 118,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 119,
+                            CountryId = 119,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 120,
+                            CountryId = 120,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 121,
+                            CountryId = 121,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 122,
+                            CountryId = 122,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 123,
+                            CountryId = 123,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 124,
+                            CountryId = 124,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 125,
+                            CountryId = 125,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 126,
+                            CountryId = 126,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 127,
+                            CountryId = 127,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 128,
+                            CountryId = 128,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 129,
+                            CountryId = 129,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 130,
+                            CountryId = 130,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 131,
+                            CountryId = 131,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 132,
+                            CountryId = 132,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 133,
+                            CountryId = 133,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 134,
+                            CountryId = 134,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 135,
+                            CountryId = 135,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 136,
+                            CountryId = 136,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 137,
+                            CountryId = 137,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 138,
+                            CountryId = 138,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 139,
+                            CountryId = 139,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 140,
+                            CountryId = 140,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 141,
+                            CountryId = 141,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 142,
+                            CountryId = 142,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 143,
+                            CountryId = 143,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 144,
+                            CountryId = 144,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 145,
+                            CountryId = 145,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 146,
+                            CountryId = 146,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 147,
+                            CountryId = 147,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 148,
+                            CountryId = 148,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 149,
+                            CountryId = 149,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 150,
+                            CountryId = 150,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 151,
+                            CountryId = 151,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 152,
+                            CountryId = 152,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 153,
+                            CountryId = 153,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 154,
+                            CountryId = 154,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 155,
+                            CountryId = 155,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 156,
+                            CountryId = 156,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 157,
+                            CountryId = 157,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 158,
+                            CountryId = 158,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 159,
+                            CountryId = 159,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 160,
+                            CountryId = 160,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 161,
+                            CountryId = 161,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 162,
+                            CountryId = 162,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 163,
+                            CountryId = 163,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 164,
+                            CountryId = 164,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 165,
+                            CountryId = 165,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 166,
+                            CountryId = 166,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 167,
+                            CountryId = 167,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 168,
+                            CountryId = 168,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 169,
+                            CountryId = 169,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 170,
+                            CountryId = 170,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 171,
+                            CountryId = 171,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 172,
+                            CountryId = 172,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 173,
+                            CountryId = 173,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 174,
+                            CountryId = 174,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 175,
+                            CountryId = 175,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 176,
+                            CountryId = 176,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 177,
+                            CountryId = 177,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 178,
+                            CountryId = 178,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 179,
+                            CountryId = 179,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 180,
+                            CountryId = 180,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 181,
+                            CountryId = 181,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 182,
+                            CountryId = 182,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 183,
+                            CountryId = 183,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 184,
+                            CountryId = 184,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 185,
+                            CountryId = 185,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 186,
+                            CountryId = 186,
+                            Difficulty = "Easy"
+                        },
+                        new
+                        {
+                            Id = 187,
+                            CountryId = 187,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 188,
+                            CountryId = 188,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 189,
+                            CountryId = 189,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 190,
+                            CountryId = 190,
+                            Difficulty = "Hard"
+                        },
+                        new
+                        {
+                            Id = 191,
+                            CountryId = 191,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 192,
+                            CountryId = 192,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 193,
+                            CountryId = 193,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 194,
+                            CountryId = 194,
+                            Difficulty = "Normal"
+                        },
+                        new
+                        {
+                            Id = 195,
+                            CountryId = 195,
+                            Difficulty = "Normal"
+                        });
                 });
 
             modelBuilder.Entity("flag_it_backend.Models.ResultModel", b =>

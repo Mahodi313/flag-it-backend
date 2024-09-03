@@ -216,6 +216,204 @@ namespace flag_it_backend.Data
                 new CountryModel { Id = 194, Name = "Zambia", Continent = "Afrika", Description = "Zambia, beläget i södra Afrika, blev självständigt från Storbritannien den 24 oktober 1964. Landet har cirka 18 miljoner invånare. Det officiella språket är engelska.", FlagImage = "https://flagcdn.com/zm.svg" },
                 new CountryModel { Id = 195, Name = "Zimbabwe", Continent = "Afrika", Description = "Zimbabwe, beläget i södra Afrika, blev självständigt från Storbritannien den 18 april 1980. Landet har cirka 14 miljoner invånare. De officiella språken är engelska, shona och ndebele.", FlagImage = "https://flagcdn.com/zw.svg" }
             );
+
+            builder.Entity<QuestionModel>().HasData(
+                new QuestionModel { Id = 1, CountryId = 1, Difficulty = "Hard" }, // Afghanistan
+                new QuestionModel { Id = 2, CountryId = 2, Difficulty = "Normal" }, // Albanien
+                new QuestionModel { Id = 3, CountryId = 3, Difficulty = "Normal" }, // Algeriet
+                new QuestionModel { Id = 4, CountryId = 4, Difficulty = "Hard" }, // Andorra
+                new QuestionModel { Id = 5, CountryId = 5, Difficulty = "Normal" }, // Angola
+                new QuestionModel { Id = 6, CountryId = 6, Difficulty = "Hard" }, // Antigua och Barbuda
+                new QuestionModel { Id = 7, CountryId = 7, Difficulty = "Easy" }, // Argentina
+                new QuestionModel { Id = 8, CountryId = 8, Difficulty = "Hard" }, // Armenien
+                new QuestionModel { Id = 9, CountryId = 9, Difficulty = "Easy" }, // Australien
+                new QuestionModel { Id = 10, CountryId = 10, Difficulty = "Normal" }, // Österrike
+                new QuestionModel { Id = 11, CountryId = 11, Difficulty = "Normal" }, // Azerbajdzjan
+                new QuestionModel { Id = 12, CountryId = 12, Difficulty = "Hard" }, // Bahamas
+                new QuestionModel { Id = 13, CountryId = 13, Difficulty = "Normal" }, // Bahrain
+                new QuestionModel { Id = 14, CountryId = 14, Difficulty = "Normal" }, // Bangladesh
+                new QuestionModel { Id = 15, CountryId = 15, Difficulty = "Hard" }, // Barbados
+                new QuestionModel { Id = 16, CountryId = 16, Difficulty = "Hard" }, // Vitryssland
+                new QuestionModel { Id = 17, CountryId = 17, Difficulty = "Normal" }, // Belgien
+                new QuestionModel { Id = 18, CountryId = 18, Difficulty = "Hard" }, // Belize
+                new QuestionModel { Id = 19, CountryId = 19, Difficulty = "Normal" }, // Benin
+                new QuestionModel { Id = 20, CountryId = 20, Difficulty = "Hard" }, // Bhutan
+                new QuestionModel { Id = 21, CountryId = 21, Difficulty = "Normal" }, // Bolivia
+                new QuestionModel { Id = 22, CountryId = 22, Difficulty = "Hard" }, // Bosnien och Hercegovina
+                new QuestionModel { Id = 23, CountryId = 23, Difficulty = "Hard" }, // Botswana
+                new QuestionModel { Id = 24, CountryId = 24, Difficulty = "Easy" }, // Brasilien
+                new QuestionModel { Id = 25, CountryId = 25, Difficulty = "Hard" }, // Brunei
+                new QuestionModel { Id = 26, CountryId = 26, Difficulty = "Normal" }, // Bulgarien
+                new QuestionModel { Id = 27, CountryId = 27, Difficulty = "Hard" }, // Burkina Faso
+                new QuestionModel { Id = 28, CountryId = 28, Difficulty = "Hard" }, // Burundi
+                new QuestionModel { Id = 29, CountryId = 29, Difficulty = "Hard" }, // Cabo Verde
+                new QuestionModel { Id = 30, CountryId = 30, Difficulty = "Normal" }, // Kambodja
+                new QuestionModel { Id = 31, CountryId = 31, Difficulty = "Normal" }, // Kamerun
+                new QuestionModel { Id = 32, CountryId = 32, Difficulty = "Easy" }, // Kanada
+                new QuestionModel { Id = 33, CountryId = 33, Difficulty = "Hard" }, // Centralafrikanska republiken
+                new QuestionModel { Id = 34, CountryId = 34, Difficulty = "Normal" }, // Tchad
+                new QuestionModel { Id = 35, CountryId = 35, Difficulty = "Easy" }, // Chile
+                new QuestionModel { Id = 36, CountryId = 36, Difficulty = "Easy" }, // Kina
+                new QuestionModel { Id = 37, CountryId = 37, Difficulty = "Easy" }, // Colombia
+                new QuestionModel { Id = 38, CountryId = 38, Difficulty = "Hard" }, // Komorerna
+                new QuestionModel { Id = 39, CountryId = 39, Difficulty = "Normal" }, // Kongo-Brazzaville
+                new QuestionModel { Id = 40, CountryId = 40, Difficulty = "Normal" }, // Kongo-Kinshasa
+                new QuestionModel { Id = 41, CountryId = 41, Difficulty = "Normal" }, // Costa Rica
+                new QuestionModel { Id = 42, CountryId = 42, Difficulty = "Normal" }, // Kroatien
+                new QuestionModel { Id = 43, CountryId = 43, Difficulty = "Normal" }, // Kuba
+                new QuestionModel { Id = 44, CountryId = 44, Difficulty = "Normal" }, // Cypern
+                new QuestionModel { Id = 45, CountryId = 45, Difficulty = "Normal" }, // Tjeckien
+                new QuestionModel { Id = 46, CountryId = 46, Difficulty = "Normal" }, // Danmark
+                new QuestionModel { Id = 47, CountryId = 47, Difficulty = "Hard" }, // Djibouti
+                new QuestionModel { Id = 48, CountryId = 48, Difficulty = "Hard" }, // Dominica
+                new QuestionModel { Id = 49, CountryId = 49, Difficulty = "Normal" }, // Dominikanska republiken
+                new QuestionModel { Id = 50, CountryId = 50, Difficulty = "Hard" }, // Östtimor
+                new QuestionModel { Id = 51, CountryId = 51, Difficulty = "Normal" }, // Ecuador
+                new QuestionModel { Id = 52, CountryId = 52, Difficulty = "Easy" }, // Egypten
+                new QuestionModel { Id = 53, CountryId = 53, Difficulty = "Normal" }, // El Salvador
+                new QuestionModel { Id = 54, CountryId = 54, Difficulty = "Hard" }, // Ekvatorialguinea
+                new QuestionModel { Id = 55, CountryId = 55, Difficulty = "Hard" }, // Eritrea
+                new QuestionModel { Id = 56, CountryId = 56, Difficulty = "Normal" }, // Estland
+                new QuestionModel { Id = 57, CountryId = 57, Difficulty = "Hard" }, // Eswatini
+                new QuestionModel { Id = 58, CountryId = 58, Difficulty = "Normal" }, // Etiopien
+                new QuestionModel { Id = 59, CountryId = 59, Difficulty = "Hard" }, // Fiji
+                new QuestionModel { Id = 60, CountryId = 60, Difficulty = "Normal" }, // Finland
+                new QuestionModel { Id = 61, CountryId = 61, Difficulty = "Easy" }, // Frankrike
+                new QuestionModel { Id = 62, CountryId = 62, Difficulty = "Hard" }, // Gabon
+                new QuestionModel { Id = 63, CountryId = 63, Difficulty = "Hard" }, // Gambia
+                new QuestionModel { Id = 64, CountryId = 64, Difficulty = "Hard" }, // Georgien
+                new QuestionModel { Id = 65, CountryId = 65, Difficulty = "Easy" }, // Tyskland
+                new QuestionModel { Id = 66, CountryId = 66, Difficulty = "Normal" }, // Ghana
+                new QuestionModel { Id = 67, CountryId = 67, Difficulty = "Easy" }, // Grekland
+                new QuestionModel { Id = 68, CountryId = 68, Difficulty = "Hard" }, // Grenada
+                new QuestionModel { Id = 69, CountryId = 69, Difficulty = "Normal" }, // Guatemala
+                new QuestionModel { Id = 70, CountryId = 70, Difficulty = "Hard" }, // Guinea
+                new QuestionModel { Id = 71, CountryId = 71, Difficulty = "Hard" }, // Guinea-Bissau
+                new QuestionModel { Id = 72, CountryId = 72, Difficulty = "Hard" }, // Guyana
+                new QuestionModel { Id = 73, CountryId = 73, Difficulty = "Normal" }, // Haiti
+                new QuestionModel { Id = 74, CountryId = 74, Difficulty = "Normal" }, // Honduras
+                new QuestionModel { Id = 75, CountryId = 75, Difficulty = "Normal" }, // Ungern
+                new QuestionModel { Id = 76, CountryId = 76, Difficulty = "Hard" }, // Island
+                new QuestionModel { Id = 77, CountryId = 77, Difficulty = "Easy" }, // Indien
+                new QuestionModel { Id = 78, CountryId = 78, Difficulty = "Easy" }, // Indonesien
+                new QuestionModel { Id = 79, CountryId = 79, Difficulty = "Normal" }, // Iran
+                new QuestionModel { Id = 80, CountryId = 80, Difficulty = "Normal" }, // Irak
+                new QuestionModel { Id = 81, CountryId = 81, Difficulty = "Normal" }, // Irland
+                new QuestionModel { Id = 82, CountryId = 82, Difficulty = "Easy" }, // Italien
+                new QuestionModel { Id = 83, CountryId = 83, Difficulty = "Normal" }, // Elfenbenskusten
+                new QuestionModel { Id = 84, CountryId = 84, Difficulty = "Normal" }, // Jamaica
+                new QuestionModel { Id = 85, CountryId = 85, Difficulty = "Easy" }, // Japan
+                new QuestionModel { Id = 86, CountryId = 86, Difficulty = "Normal" }, // Jordanien
+                new QuestionModel { Id = 87, CountryId = 87, Difficulty = "Hard" }, // Kazakstan
+                new QuestionModel { Id = 88, CountryId = 88, Difficulty = "Normal" }, // Kenya
+                new QuestionModel { Id = 89, CountryId = 89, Difficulty = "Hard" }, // Kiribati
+                new QuestionModel { Id = 90, CountryId = 90, Difficulty = "Normal" }, // Nordkorea
+                new QuestionModel { Id = 91, CountryId = 91, Difficulty = "Normal" }, // Sydkorea
+                new QuestionModel { Id = 92, CountryId = 92, Difficulty = "Hard" }, // Kosovo
+                new QuestionModel { Id = 93, CountryId = 93, Difficulty = "Normal" }, // Kuwait
+                new QuestionModel { Id = 94, CountryId = 94, Difficulty = "Hard" }, // Kirgizistan
+                new QuestionModel { Id = 95, CountryId = 95, Difficulty = "Hard" }, // Laos
+                new QuestionModel { Id = 96, CountryId = 96, Difficulty = "Normal" }, // Lettland
+                new QuestionModel { Id = 97, CountryId = 97, Difficulty = "Normal" }, // Libanon
+                new QuestionModel { Id = 98, CountryId = 98, Difficulty = "Hard" }, // Lesotho
+                new QuestionModel { Id = 99, CountryId = 99, Difficulty = "Normal" }, // Liberia
+                new QuestionModel { Id = 100, CountryId = 100, Difficulty = "Normal" }, // Libyen
+                new QuestionModel { Id = 101, CountryId = 101, Difficulty = "Hard" }, // Liechtenstein
+                new QuestionModel { Id = 102, CountryId = 102, Difficulty = "Normal" }, // Litauen
+                new QuestionModel { Id = 103, CountryId = 103, Difficulty = "Normal" }, // Luxemburg
+                new QuestionModel { Id = 104, CountryId = 104, Difficulty = "Normal" }, // Madagaskar
+                new QuestionModel { Id = 105, CountryId = 105, Difficulty = "Normal" }, // Malawi
+                new QuestionModel { Id = 106, CountryId = 106, Difficulty = "Normal" }, // Malaysia
+                new QuestionModel { Id = 107, CountryId = 107, Difficulty = "Hard" }, // Maldiverna
+                new QuestionModel { Id = 108, CountryId = 108, Difficulty = "Normal" }, // Mali
+                new QuestionModel { Id = 109, CountryId = 109, Difficulty = "Hard" }, // Malta
+                new QuestionModel { Id = 110, CountryId = 110, Difficulty = "Hard" }, // Marshallöarna
+                new QuestionModel { Id = 111, CountryId = 111, Difficulty = "Normal" }, // Mauretanien
+                new QuestionModel { Id = 112, CountryId = 112, Difficulty = "Hard" }, // Mauritius
+                new QuestionModel { Id = 113, CountryId = 113, Difficulty = "Easy" }, // Mexiko
+                new QuestionModel { Id = 114, CountryId = 114, Difficulty = "Hard" }, // Mikronesien
+                new QuestionModel { Id = 115, CountryId = 115, Difficulty = "Hard" }, // Moldavien
+                new QuestionModel { Id = 116, CountryId = 116, Difficulty = "Hard" }, // Monaco
+                new QuestionModel { Id = 117, CountryId = 117, Difficulty = "Normal" }, // Mongoliet
+                new QuestionModel { Id = 118, CountryId = 118, Difficulty = "Hard" }, // Montenegro
+                new QuestionModel { Id = 119, CountryId = 119, Difficulty = "Normal" }, // Marocko
+                new QuestionModel { Id = 120, CountryId = 120, Difficulty = "Normal" }, // Moçambique
+                new QuestionModel { Id = 121, CountryId = 121, Difficulty = "Normal" }, // Myanmar
+                new QuestionModel { Id = 122, CountryId = 122, Difficulty = "Hard" }, // Namibia
+                new QuestionModel { Id = 123, CountryId = 123, Difficulty = "Hard" }, // Nauru
+                new QuestionModel { Id = 124, CountryId = 124, Difficulty = "Normal" }, // Nepal
+                new QuestionModel { Id = 125, CountryId = 125, Difficulty = "Normal" }, // Nederländerna
+                new QuestionModel { Id = 126, CountryId = 126, Difficulty = "Normal" }, // Nya Zeeland
+                new QuestionModel { Id = 127, CountryId = 127, Difficulty = "Normal" }, // Nicaragua
+                new QuestionModel { Id = 128, CountryId = 128, Difficulty = "Hard" }, // Niger
+                new QuestionModel { Id = 129, CountryId = 129, Difficulty = "Normal" }, // Nigeria
+                new QuestionModel { Id = 130, CountryId = 130, Difficulty = "Hard" }, // Nordmakedonien
+                new QuestionModel { Id = 131, CountryId = 131, Difficulty = "Normal" }, // Norge
+                new QuestionModel { Id = 132, CountryId = 132, Difficulty = "Hard" }, // Oman
+                new QuestionModel { Id = 133, CountryId = 133, Difficulty = "Normal" }, // Pakistan
+                new QuestionModel { Id = 134, CountryId = 134, Difficulty = "Hard" }, // Palau
+                new QuestionModel { Id = 135, CountryId = 135, Difficulty = "Hard" }, // Palestina
+                new QuestionModel { Id = 136, CountryId = 136, Difficulty = "Normal" }, // Panama
+                new QuestionModel { Id = 137, CountryId = 137, Difficulty = "Hard" }, // Papua Nya Guinea
+                new QuestionModel { Id = 138, CountryId = 138, Difficulty = "Normal" }, // Paraguay
+                new QuestionModel { Id = 139, CountryId = 139, Difficulty = "Normal" }, // Peru
+                new QuestionModel { Id = 140, CountryId = 140, Difficulty = "Normal" }, // Filippinerna
+                new QuestionModel { Id = 141, CountryId = 141, Difficulty = "Normal" }, // Polen
+                new QuestionModel { Id = 142, CountryId = 142, Difficulty = "Easy" }, // Portugal
+                new QuestionModel { Id = 143, CountryId = 143, Difficulty = "Normal" }, // Qatar
+                new QuestionModel { Id = 144, CountryId = 144, Difficulty = "Normal" }, // Rumänien
+                new QuestionModel { Id = 145, CountryId = 145, Difficulty = "Easy" }, // Ryssland
+                new QuestionModel { Id = 146, CountryId = 146, Difficulty = "Normal" }, // Rwanda
+                new QuestionModel { Id = 147, CountryId = 147, Difficulty = "Hard" }, // Saint Kitts och Nevis
+                new QuestionModel { Id = 148, CountryId = 148, Difficulty = "Hard" }, // Saint Lucia
+                new QuestionModel { Id = 149, CountryId = 149, Difficulty = "Hard" }, // Saint Vincent och Grenadinerna
+                new QuestionModel { Id = 150, CountryId = 150, Difficulty = "Hard" }, // Samoa
+                new QuestionModel { Id = 151, CountryId = 151, Difficulty = "Hard" }, // San Marino
+                new QuestionModel { Id = 152, CountryId = 152, Difficulty = "Hard" }, // Sao Tomé och Principe
+                new QuestionModel { Id = 153, CountryId = 153, Difficulty = "Normal" }, // Saudiarabien
+                new QuestionModel { Id = 154, CountryId = 154, Difficulty = "Normal" }, // Senegal
+                new QuestionModel { Id = 155, CountryId = 155, Difficulty = "Normal" }, // Serbien
+                new QuestionModel { Id = 156, CountryId = 156, Difficulty = "Hard" }, // Seychellerna
+                new QuestionModel { Id = 157, CountryId = 157, Difficulty = "Hard" }, // Sierra Leone
+                new QuestionModel { Id = 158, CountryId = 158, Difficulty = "Normal" }, // Singapore
+                new QuestionModel { Id = 159, CountryId = 159, Difficulty = "Normal" }, // Slovakien
+                new QuestionModel { Id = 160, CountryId = 160, Difficulty = "Normal" }, // Slovenien
+                new QuestionModel { Id = 161, CountryId = 161, Difficulty = "Hard" }, // Salomonöarna
+                new QuestionModel { Id = 162, CountryId = 162, Difficulty = "Normal" }, // Somalia
+                new QuestionModel { Id = 163, CountryId = 163, Difficulty = "Easy" }, // Sydafrika
+                new QuestionModel { Id = 164, CountryId = 164, Difficulty = "Hard" }, // Sydsudan
+                new QuestionModel { Id = 165, CountryId = 165, Difficulty = "Easy" }, // Spanien
+                new QuestionModel { Id = 166, CountryId = 166, Difficulty = "Normal" }, // Sri Lanka
+                new QuestionModel { Id = 167, CountryId = 167, Difficulty = "Normal" }, // Sudan
+                new QuestionModel { Id = 168, CountryId = 168, Difficulty = "Hard" }, // Surinam
+                new QuestionModel { Id = 169, CountryId = 169, Difficulty = "Easy" }, // Sverige
+                new QuestionModel { Id = 170, CountryId = 170, Difficulty = "Normal" }, // Schweiz
+                new QuestionModel { Id = 171, CountryId = 171, Difficulty = "Normal" }, // Syrien
+                new QuestionModel { Id = 172, CountryId = 172, Difficulty = "Hard" }, // Tadzjikistan
+                new QuestionModel { Id = 173, CountryId = 173, Difficulty = "Normal" }, // Tanzania
+                new QuestionModel { Id = 174, CountryId = 174, Difficulty = "Normal" }, // Thailand
+                new QuestionModel { Id = 175, CountryId = 175, Difficulty = "Hard" }, // Togo
+                new QuestionModel { Id = 176, CountryId = 176, Difficulty = "Hard" }, // Tonga
+                new QuestionModel { Id = 177, CountryId = 177, Difficulty = "Normal" }, // Trinidad och Tobago
+                new QuestionModel { Id = 178, CountryId = 178, Difficulty = "Normal" }, // Tunisien
+                new QuestionModel { Id = 179, CountryId = 179, Difficulty = "Easy" }, // Turkiet
+                new QuestionModel { Id = 180, CountryId = 180, Difficulty = "Hard" }, // Turkmenistan
+                new QuestionModel { Id = 181, CountryId = 181, Difficulty = "Hard" }, // Tuvalu
+                new QuestionModel { Id = 182, CountryId = 182, Difficulty = "Normal" }, // Uganda
+                new QuestionModel { Id = 183, CountryId = 183, Difficulty = "Normal" }, // Ukraina
+                new QuestionModel { Id = 184, CountryId = 184, Difficulty = "Normal" }, // Förenade Arabemiraten
+                new QuestionModel { Id = 185, CountryId = 185, Difficulty = "Easy" }, // Storbritannien
+                new QuestionModel { Id = 186, CountryId = 186, Difficulty = "Easy" }, // USA
+                new QuestionModel { Id = 187, CountryId = 187, Difficulty = "Normal" }, // Uruguay
+                new QuestionModel { Id = 188, CountryId = 188, Difficulty = "Normal" }, // Uzbekistan
+                new QuestionModel { Id = 189, CountryId = 189, Difficulty = "Hard" }, // Vanuatu
+                new QuestionModel { Id = 190, CountryId = 190, Difficulty = "Hard" }, // Vatikanstaten
+                new QuestionModel { Id = 191, CountryId = 191, Difficulty = "Normal" }, // Venezuela
+                new QuestionModel { Id = 192, CountryId = 192, Difficulty = "Normal" }, // Vietnam
+                new QuestionModel { Id = 193, CountryId = 193, Difficulty = "Normal" }, // Jemen
+                new QuestionModel { Id = 194, CountryId = 194, Difficulty = "Normal" }, // Zambia
+                new QuestionModel { Id = 195, CountryId = 195, Difficulty = "Normal" }  // Zimbabwe
+            );
         }
     }
 }
