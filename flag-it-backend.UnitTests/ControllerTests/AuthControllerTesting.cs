@@ -1,5 +1,6 @@
 ﻿using flag_it_backend.Controllers;
 using flag_it_backend.DTOs;
+using flag_it_backend.Models;
 using flag_it_backend.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
@@ -20,12 +21,17 @@ namespace flag_it_backend.UnitTests.ControllerTests
     {
         private readonly Mock<IAuthService> _authServiceMock;
         private readonly AuthController _authController;
+        private readonly Mock<UserManager<ApplicationUser>> _userManagerMock;
 
         public AuthControllerTesting()
         {
             _authServiceMock = new Mock<IAuthService>();
 
-            _authController = new AuthController(_authServiceMock.Object) 
+            _userManagerMock = new Mock<UserManager<ApplicationUser>>(
+                new Mock<IUserStore<ApplicationUser>>().Object,
+                null, null, null, null, null, null, null, null);
+
+            _authController = new AuthController(_authServiceMock.Object, _userManagerMock.Object)
             {
                 ControllerContext = new ControllerContext()
                 {
@@ -61,17 +67,21 @@ namespace flag_it_backend.UnitTests.ControllerTests
         }
 
         [Fact]
-        public async Task Login_ShouldReturnOk_WhenLoginIsSuccessful()
+        public async Task Login_ShouldReturnOk_WithUserId_WhenLoginIsSuccessful()
         {
-
             var loginDto = new LoginDto { Username = "testuser", Password = "Password123!" };
             _authServiceMock.Setup(service => service.LoginAsync(loginDto)).ReturnsAsync(true);
 
+            _userManagerMock.Setup(x => x.FindByNameAsync(It.IsAny<string>()))
+                .ReturnsAsync(new ApplicationUser
+                {
+                    UserName = "testuser",
+                    Id = "12345" 
+                });
+
             var services = new ServiceCollection();
-
-            services.AddLogging(); 
+            services.AddLogging();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                     .AddCookie(options =>
                     {
@@ -79,9 +89,7 @@ namespace flag_it_backend.UnitTests.ControllerTests
                         options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
                         options.SlidingExpiration = true;
                     });
-
             var serviceProvider = services.BuildServiceProvider();
-
             var httpContext = new DefaultHttpContext
             {
                 RequestServices = serviceProvider
@@ -91,8 +99,12 @@ namespace flag_it_backend.UnitTests.ControllerTests
             var result = await _authController.Login(loginDto);
 
             var okResult = Assert.IsType<OkObjectResult>(result);
-            Assert.Equal("Login successful", okResult.Value);
+            var responseValue = okResult.Value;
+
+            Assert.Equal("12345", responseValue.GetType().GetProperty("UserId").GetValue(responseValue)); // Check for UserId
+            Assert.Equal("testuser", responseValue.GetType().GetProperty("Username").GetValue(responseValue)); // Check for Username
         }
+
 
 
 
@@ -119,22 +131,29 @@ namespace flag_it_backend.UnitTests.ControllerTests
         }
 
         [Fact]
-        public void Me_ShouldReturnOkWithUsername_WhenUserIsAuthenticated()
+        public async Task Me_ShouldReturnOk_WithUserIdAndUsername_WhenUserIsAuthenticated()
         {
-
             var claims = new List<Claim> { new Claim(ClaimTypes.Name, "testuser") };
             var identity = new ClaimsIdentity(claims, "TestAuthType");
             var principal = new ClaimsPrincipal(identity);
 
             _authController.ControllerContext.HttpContext.User = principal;
 
-            var result = _authController.Me();
+            _userManagerMock.Setup(x => x.FindByNameAsync(It.IsAny<string>()))
+                .ReturnsAsync(new ApplicationUser
+                {
+                    UserName = "testuser",
+                    Id = "12345"
+                });
+
+
+            var result = await _authController.Me(); 
 
             var okResult = Assert.IsType<OkObjectResult>(result);
-            var user = okResult.Value;
+            var responseValue = okResult.Value;
 
-            Assert.NotNull(user);
-            Assert.Equal("testuser", user.GetType().GetProperty("Username").GetValue(user));
+            Assert.Equal("12345", responseValue.GetType().GetProperty("UserId").GetValue(responseValue)); 
+            Assert.Equal("testuser", responseValue.GetType().GetProperty("Username").GetValue(responseValue)); 
         }
 
     }
