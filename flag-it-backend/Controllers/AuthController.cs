@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
+using flag_it_backend.Models;
 
 namespace flag_it_backend.Controllers
 {
@@ -14,10 +16,12 @@ namespace flag_it_backend.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, UserManager<ApplicationUser> userManager)
         {
             _authService = authService;
+            _userManager = userManager;
         }
 
         [HttpPost("register")]
@@ -50,10 +54,13 @@ namespace flag_it_backend.Controllers
 
             if (isSuccess)
             {
+
+                var user = await _userManager.FindByNameAsync(loginDto.Username);
                 var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, loginDto.Username),
-        };
+                {
+                    new Claim(ClaimTypes.Name, loginDto.Username),
+                    new Claim(ClaimTypes.NameIdentifier, user.Id)
+                };
 
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
@@ -68,7 +75,12 @@ namespace flag_it_backend.Controllers
                     new ClaimsPrincipal(claimsIdentity),
                     authProperties);
 
-                return Ok("Login successful");
+                return Ok(new
+                {
+                    Username = user.UserName,
+                    UserId = user.Id,
+                    Email = user.Email
+                });
             }
 
             return Unauthorized("Invalid username or password");
@@ -84,9 +96,21 @@ namespace flag_it_backend.Controllers
 
         [Authorize]
         [HttpGet("me")]
-        public IActionResult Me()
+        public async Task<IActionResult> Me()
         {
-            return Ok(new { Username = User.Identity.Name });
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            if (user == null)
+            {
+                return Unauthorized();
+            }
+
+            return Ok(new
+            {
+                Username = user.UserName,
+                UserId = user.Id,        
+                Email = user.Email      
+            });
         }
     }
 }
