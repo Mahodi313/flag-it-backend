@@ -4,6 +4,7 @@ using flag_it_backend.Repositories;
 using flag_it_backend.Repositories.Interfaces;
 using flag_it_backend.Services;
 using flag_it_backend.Services.Interfaces;
+using flag_it_backend.Utilities;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -57,9 +58,16 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     options.LoginPath = "/api/auth/login";
 });
 
-
-
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+
+    await SeedData.Initialize(services, userManager);
+}
 
 app.UseCors("AllowSpecificOrigin");
 
