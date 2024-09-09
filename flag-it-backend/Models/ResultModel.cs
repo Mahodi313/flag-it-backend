@@ -12,6 +12,5 @@ namespace flag_it_backend.Models
         public ApplicationUser User { get; set; }
         public DateTime DateOfResult { get; set; }
         public TimeSpan TimeOfCompletion { get; set; }
-
     }
 }

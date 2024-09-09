@@ -55,6 +55,7 @@ namespace flag_it_backend.Services
             resultModel.TimeOfCompletion = result.TimeOfCompletion;
 
 
+
             // Call the CreateAsync method of _resultRepository with the converted ResultModel object
             await _resultRepository.CreateAsync(resultModel);
         }
