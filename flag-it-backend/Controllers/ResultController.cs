@@ -36,7 +36,7 @@ namespace flag_it_backend.Controllers
         // POST: api/Result
         // This method creates a new result in the service.
         [HttpPost]
-        public async Task<ActionResult> Create([FromBody] CreateDto resultModel)
+        public async Task<IActionResult> Create([FromBody] CreateDto resultModel)
         {
             if (!ModelState.IsValid)
             {
@@ -45,17 +45,19 @@ namespace flag_it_backend.Controllers
 
             try
             {
-                // Create the result asynchronously in the service
+                // Convert string TimeOfCompletion to TimeSpan if needed (optional step based on input)
+                // TimeSpan timeOfCompletion = TimeSpan.Parse(resultModel.TimeOfCompletion);
+
                 await _resultService.CreateAsync(resultModel);
-                // Return the created result with a CreatedAtAction (201) status code
-                // The CreatedAtAction method is used to return a reference to the newly created resource
-                return Ok()/*CreatedAtActi(nameof(GetById), new { id = resultModel.Id }, resultModel)*/;
+
+                return Ok(new { message = "Result saved successfully!" });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { error = ex.Message });
             }
         }
+
 
         // GET: api/Result/{id}
         // This method retrieves a result by its ID from the service.
