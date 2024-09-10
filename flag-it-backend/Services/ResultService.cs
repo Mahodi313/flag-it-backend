@@ -50,6 +50,7 @@ namespace flag_it_backend.Services
             // Map the properties from ResultDtos to ResultModel
             resultModel.Points = result.Points;
             resultModel.UserId = result.UserId;
+            resultModel.Username = result.Username;
             resultModel.Difficulty = result.Difficulty;
             resultModel.DateOfResult = result.DateOfResult;
             resultModel.TimeOfCompletion = result.TimeOfCompletion;
@@ -66,6 +67,7 @@ namespace flag_it_backend.Services
 
             resultDto.Points = resultModel.Points;
             resultDto.UserId = resultModel.UserId;
+            resultDto.Username = resultModel.Username;
             resultDto.Difficulty = resultModel.Difficulty;
             resultDto.DateOfResult = resultModel.DateOfResult;
             resultDto.TimeOfCompletion = resultModel.TimeOfCompletion;
@@ -79,6 +81,7 @@ namespace flag_it_backend.Services
 
             resultDto.Points = resultModel.Points;
             resultDto.UserId = resultModel.UserId;
+            resultDto.Username = resultModel.Username;
             resultDto.Difficulty = resultModel.Difficulty;
             resultDto.DateOfResult = resultModel.DateOfResult;
             resultDto.TimeOfCompletion = resultModel.TimeOfCompletion;
