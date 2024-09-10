@@ -7,6 +7,7 @@
             public int Id { get; set; } = int.MinValue;
             public int Points { get; set; } = int.MinValue;
             public string UserId { get; set; } = string.Empty;
+            public string Username { get; set; } = string.Empty;
             public string Difficulty { get; set; } = string.Empty;
             public DateTime DateOfResult { get; set; } = DateTime.MinValue;
             public TimeSpan TimeOfCompletion { get; set; } = TimeSpan.Zero;
@@ -18,6 +19,7 @@
             public int Id { get; set; } = int.MinValue;
             public int Points { get; set; } = int.MinValue;
             public string UserId { get; set; } = string.Empty;
+            public string Username { get; set; } = string.Empty;
             public string Difficulty { get; set; } = string.Empty;
             public DateTime DateOfResult { get; set; } = DateTime.MinValue;
             public TimeSpan TimeOfCompletion { get; set; } = new TimeSpan(1, 0, 0);
@@ -28,6 +30,7 @@
             public int Id { get; set; } = int.MinValue;
             public int Points { get; set; } = int.MinValue;
             public string UserId { get; set; } = string.Empty;
+            public string Username { get; set; } = string.Empty;
             public string Difficulty { get; set; } = string.Empty;
             public DateTime DateOfResult { get; set; } = DateTime.MinValue;
             public TimeSpan TimeOfCompletion { get; set; } = TimeSpan.Zero;
@@ -38,6 +41,7 @@
             public int Id { get; set; } = int.MinValue;
             public int Points { get; set; } = int.MinValue;
             public string UserId { get; set; } = string.Empty;
+            public string Username { get; set; } = string.Empty;
             public string Difficulty { get; set; } = string.Empty;
             public DateTime DateOfResult { get; set; } = DateTime.MinValue;
             public TimeSpan TimeOfCompletion { get; set; } = TimeSpan.Zero;

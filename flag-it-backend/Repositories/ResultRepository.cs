@@ -29,6 +29,7 @@ namespace flag_it_backend.Repositories
             {
                 Points = resultModel.Points,
                 UserId = resultModel.UserId,
+                Username = resultModel.Username,
                 Difficulty = resultModel.Difficulty,
                 DateOfResult = resultModel.DateOfResult,
                 TimeOfCompletion = resultModel.TimeOfCompletion
